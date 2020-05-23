@@ -20,7 +20,6 @@ begin
 _frmmsg := TfrmMensagem.Create(nil);
 _frmmsg.Show;
 _frmmsg.msgsucesso(msg);
-_frmmsg.Free;
 end;
 
 procedure msgerro(msg:string);
@@ -28,15 +27,13 @@ begin
 _frmmsg := TfrmMensagem.Create(nil);
 _frmmsg.Show;
 _frmmsg.msgerro(msg);
-_frmmsg.Free;
 end;
 
-procedure msgafirmacao(msg:string);
+procedure msgatencao(msg:string);
 begin
 _frmmsg := TfrmMensagem.Create(nil);
 _frmmsg.Show;
-_frmmsg.msgafirmacao(msg);
-_frmmsg.Free;
+_frmmsg.msgatencao(msg);
 end;
 
 procedure msginformacao(msg:string);

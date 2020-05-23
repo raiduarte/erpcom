@@ -10,7 +10,7 @@ uses
 var _frmmsg:TfrmMensagem;
 procedure msgsucesso(msg:string);
 procedure msgerro(msg:string);
-procedure msgafirmacao(msg:string);
+procedure msgatencao(msg:string);
 procedure msginformacao(msg:string);
 
 implementation
@@ -29,11 +29,11 @@ _frmmsg.Show;
 _frmmsg.msgerro(msg);
 end;
 
-procedure msgafirmacao(msg:string);
+procedure msgatencao(msg:string);
 begin
 _frmmsg := TfrmMensagem.Create(nil);
 _frmmsg.Show;
-_frmmsg.msgafirmacao(msg);
+_frmmsg.msgatencao(msg);
 end;
 
 procedure msginformacao(msg:string);

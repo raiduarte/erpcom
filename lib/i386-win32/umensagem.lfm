@@ -2,41 +2,41 @@ object frmMensagem: TfrmMensagem
   Left = 509
   Height = 436
   Top = 250
-  Width = 563
+  Width = 579
   BorderIcons = [biSystemMenu]
   BorderStyle = bsNone
   Caption = 'Mensagem'
   ClientHeight = 436
-  ClientWidth = 563
+  ClientWidth = 579
   OnCreate = FormCreate
+  OnPaint = FormPaint
   Position = poScreenCenter
   object Shape1: TShape
     Left = 0
     Height = 436
     Top = 0
-    Width = 563
+    Width = 579
     Align = alClient
     Brush.Color = clActiveBorder
     Pen.Style = psClear
   end
   object Image1: TImage
-    Left = 184
-    Height = 168
-    Top = 32
-    Width = 200
+    Left = 200
+    Height = 152
+    Top = 49
+    Width = 187
     Center = True
     Proportional = True
-    Stretch = True
   end
   object lblMsg: TLabel
     Left = 0
-    Height = 186
-    Top = 200
-    Width = 563
+    Height = 116
+    Top = 250
+    Width = 579
     Align = alClient
     Alignment = taCenter
-    BorderSpacing.Top = 200
-    BorderSpacing.Bottom = 50
+    BorderSpacing.Top = 250
+    BorderSpacing.Bottom = 70
     Caption = '.....'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -50,13 +50,51 @@ object frmMensagem: TfrmMensagem
     ParentFont = False
     WordWrap = True
   end
-  object SpeedButton1: TSpeedButton
-    Left = 184
+  object lblTitulo: TLabel
+    Left = 0
+    Height = 31
+    Top = 217
+    Width = 579
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'lblTitulo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -32
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape2: TShape
+    Left = 226
+    Height = 38
+    Top = 370
+    Width = 126
+    Brush.Color = clMenuHighlight
+    Pen.EndCap = pecSquare
+    Pen.Style = psClear
+    Shape = stRoundRect
+  end
+  object RxSpeedButton1: TRxSpeedButton
+    Left = 224
     Height = 40
-    Top = 389
-    Width = 200
+    Top = 368
+    Width = 128
     Caption = 'OK'
-    Color = clSkyBlue
-    OnClick = SpeedButton1Click
+    Color = clBlue
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = RxSpeedButton1Click
+    ParentFont = False
   end
 end

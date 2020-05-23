@@ -1,11 +1,11 @@
 object FrameConfiguracao: TFrameConfiguracao
   Left = 0
-  Height = 642
+  Height = 0
   Top = 0
-  Width = 909
+  Width = 0
   Align = alClient
-  ClientHeight = 642
-  ClientWidth = 909
+  ClientHeight = 0
+  ClientWidth = 0
   Color = clWhite
   Font.CharSet = ANSI_CHARSET
   Font.Color = clBlack
@@ -20,27 +20,27 @@ object FrameConfiguracao: TFrameConfiguracao
   DesignTop = 118
   object Panel1: TPanel
     Left = 0
-    Height = 642
+    Height = 0
     Top = 0
-    Width = 909
+    Width = 0
     Align = alClient
     BevelOuter = bvNone
     BorderWidth = 5
-    ClientHeight = 642
-    ClientWidth = 909
+    ClientHeight = 0
+    ClientWidth = 0
     Color = clBtnFace
     ParentColor = False
     TabOrder = 0
     object Panel2: TPanel
-      Left = 5
-      Height = 602
-      Top = 35
-      Width = 899
+      Left = 0
+      Height = 0
+      Top = 0
+      Width = 0
       Align = alClient
       BevelOuter = bvNone
       BorderWidth = 5
-      ClientHeight = 602
-      ClientWidth = 899
+      ClientHeight = 0
+      ClientWidth = 0
       Color = clWhite
       ParentColor = False
       TabOrder = 0
@@ -54,14 +54,14 @@ object FrameConfiguracao: TFrameConfiguracao
       end
     end
     object Panel3: TPanel
-      Left = 5
+      Left = 0
       Height = 30
-      Top = 5
-      Width = 899
+      Top = 0
+      Width = 0
       Align = alTop
       BevelOuter = bvNone
       ClientHeight = 30
-      ClientWidth = 899
+      ClientWidth = 0
       Color = 16314343
       ParentColor = False
       TabOrder = 1
@@ -77,7 +77,7 @@ object FrameConfiguracao: TFrameConfiguracao
         Left = 0
         Height = 2
         Top = 28
-        Width = 899
+        Width = 0
         Align = alBottom
         Pen.Color = clTeal
       end
