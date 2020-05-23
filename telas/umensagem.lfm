@@ -1,0 +1,62 @@
+object frmMensagem: TfrmMensagem
+  Left = 509
+  Height = 436
+  Top = 250
+  Width = 563
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsNone
+  Caption = 'Mensagem'
+  ClientHeight = 436
+  ClientWidth = 563
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  object Shape1: TShape
+    Left = 0
+    Height = 436
+    Top = 0
+    Width = 563
+    Align = alClient
+    Brush.Color = clActiveBorder
+    Pen.Style = psClear
+  end
+  object Image1: TImage
+    Left = 184
+    Height = 168
+    Top = 32
+    Width = 200
+    Center = True
+    Proportional = True
+    Stretch = True
+  end
+  object lblMsg: TLabel
+    Left = 0
+    Height = 186
+    Top = 200
+    Width = 563
+    Align = alClient
+    Alignment = taCenter
+    BorderSpacing.Top = 200
+    BorderSpacing.Bottom = 50
+    Caption = '.....'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 184
+    Height = 40
+    Top = 389
+    Width = 200
+    Caption = 'OK'
+    Color = clSkyBlue
+    OnClick = SpeedButton1Click
+  end
+end

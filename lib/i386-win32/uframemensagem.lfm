@@ -1,0 +1,76 @@
+object FrameMensagem: TFrameMensagem
+  Left = 0
+  Height = 12
+  Top = 0
+  Width = 6
+  Align = alClient
+  ClientHeight = 12
+  ClientWidth = 6
+  Color = clWhite
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Century Gothic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 472
+  DesignTop = 119
+  object Panel1: TPanel
+    Left = 0
+    Height = 12
+    Top = 0
+    Width = 6
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 5
+    ClientHeight = 12
+    ClientWidth = 6
+    Color = clBtnFace
+    ParentColor = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 3
+      Height = 0
+      Top = 7
+      Width = 0
+      Align = alClient
+      BevelOuter = bvNone
+      BorderWidth = 5
+      Color = clWhite
+      ParentColor = False
+      TabOrder = 0
+    end
+    object Panel3: TPanel
+      Left = 3
+      Height = 30
+      Top = 5
+      Width = 0
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 30
+      ClientWidth = 0
+      Color = 16314343
+      ParentColor = False
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 9
+        Height = 17
+        Top = 3
+        Width = 82
+        Caption = 'Configuração'
+        ParentColor = False
+      end
+      object Shape1: TShape
+        Left = 0
+        Height = 2
+        Top = 28
+        Width = 0
+        Align = alBottom
+        Pen.Color = clTeal
+      end
+    end
+  end
+end
