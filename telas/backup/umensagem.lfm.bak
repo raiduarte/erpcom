@@ -70,21 +70,22 @@ object frmMensagem: TfrmMensagem
     ParentFont = False
   end
   object Shape2: TShape
-    Left = 226
-    Height = 38
-    Top = 370
-    Width = 126
+    Left = 224
+    Height = 40
+    Top = 368
+    Width = 128
     Brush.Color = clMenuHighlight
     Pen.EndCap = pecSquare
     Pen.Style = psClear
     Shape = stRoundRect
   end
   object RxSpeedButton1: TRxSpeedButton
-    Left = 224
+    Left = 223
     Height = 40
-    Top = 368
+    Top = 367
     Width = 128
     Caption = 'OK'
+    Color = clBlue
     Flat = True
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
@@ -94,6 +95,66 @@ object frmMensagem: TfrmMensagem
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     OnClick = RxSpeedButton1Click
+    ParentFont = False
+  end
+  object Shape3: TShape
+    Left = 304
+    Height = 40
+    Top = 368
+    Width = 128
+    Brush.Color = clRed
+    Pen.EndCap = pecSquare
+    Pen.Style = psClear
+    Shape = stRoundRect
+    Visible = False
+  end
+  object RxSpeedButton2: TRxSpeedButton
+    Left = 304
+    Height = 40
+    Top = 367
+    Width = 128
+    Caption = 'NÃO'
+    Color = clBlue
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Visible = False
+    OnClick = RxSpeedButton2Click
+    ParentFont = False
+  end
+  object Shape4: TShape
+    Left = 152
+    Height = 40
+    Top = 368
+    Width = 128
+    Brush.Color = clTeal
+    Pen.EndCap = pecSquare
+    Pen.Style = psClear
+    Shape = stRoundRect
+    Visible = False
+  end
+  object RxSpeedButton3: TRxSpeedButton
+    Left = 152
+    Height = 40
+    Top = 368
+    Width = 128
+    Caption = 'SIM'
+    Color = clBlue
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Visible = False
+    OnClick = RxSpeedButton3Click
     ParentFont = False
   end
 end

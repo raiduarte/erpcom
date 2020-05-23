@@ -17,11 +17,17 @@ type
     lblTitulo: TLabel;
     lblMsg: TLabel;
     RxSpeedButton1: TRxSpeedButton;
+    RxSpeedButton2: TRxSpeedButton;
+    RxSpeedButton3: TRxSpeedButton;
     Shape1: TShape;
     Shape2: TShape;
+    Shape3: TShape;
+    Shape4: TShape;
     procedure FormCreate(Sender: TObject);
     procedure FormPaint(Sender: TObject);
     procedure RxSpeedButton1Click(Sender: TObject);
+    procedure RxSpeedButton2Click(Sender: TObject);
+    procedure RxSpeedButton3Click(Sender: TObject);
   private
 
   public
@@ -29,7 +35,8 @@ type
     procedure msgerro(msg:string);
     procedure msgatencao(msg:string);
     procedure msginformacao(msg:string);
-
+    function msgconfimacao(msg: string): Boolean;
+    var resp:boolean;
   end;
 
   {
@@ -69,6 +76,18 @@ begin
   Free;
 end;
 
+procedure TfrmMensagem.RxSpeedButton2Click(Sender: TObject);
+begin
+  resp:= true;
+  Close;
+end;
+
+procedure TfrmMensagem.RxSpeedButton3Click(Sender: TObject);
+begin
+ resp:= false;
+ Close;
+end;
+
 procedure TfrmMensagem.msgsucesso(msg: string);
 begin
   //ImageList1.getBitmap(1, Image1.Picture.Bitmap);
@@ -100,6 +119,21 @@ begin
   Image1.Picture.LoadFromFile(ExtractFilePath(ParamStr(0))+'\img\informacao.png');
   lblTitulo.Caption:= 'Informação';
   lblMsg.Caption:= msg;
+end;
+
+function TfrmMensagem.msgconfimacao(msg: string): Boolean;
+begin
+  if FileExists(ExtractFilePath(ParamStr(0))+'\img\interrogacao.png') then
+  Image1.Picture.LoadFromFile(ExtractFilePath(ParamStr(0))+'\img\interrogacao.png');
+  lblTitulo.Caption:= 'Pergunta';
+  lblMsg.Caption:= msg;
+  Shape2.Visible:= false;
+  RxSpeedButton1.Visible:=false;
+  RxSpeedButton2.Visible:=true;
+  RxSpeedButton3.Visible:=true;
+  Shape3.Visible:=true;
+  Shape4.Visible:=true;
+  result := resp;
 end;
 
 end.

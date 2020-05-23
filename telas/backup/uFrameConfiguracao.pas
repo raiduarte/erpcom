@@ -33,7 +33,12 @@ implementation
 
 procedure TFrameConfiguracao.SpeedButton1Click(Sender: TObject);
 begin
- ushowmsg.msgsucesso('O registro foi incluído com sucesso!');
+{ ushowmsg.msgsucesso('O registro foi incluído com sucesso!');
+ ushowmsg.msgerro('Deu ruim!');
+ ushowmsg.msgatencao('Abre o olho!');
+ ushowmsg.msginformacao('Me diz uma coisa!'); }
+if ushowmsg.msgconfirmacao('Tem certeza que deseja sair?') then
+ushowmsg.msgconfirmacao('Ok estamos saindo');
 end;
 
 end.

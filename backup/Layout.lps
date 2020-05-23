@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="5"/>
         <CursorPos X="36" Y="18"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -23,7 +23,7 @@
         <EditorIndex Value="6"/>
         <TopLine Value="46"/>
         <CursorPos X="23" Y="65"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -36,7 +36,7 @@
         <UnitName Value="uFrameInicio"/>
         <EditorIndex Value="8"/>
         <CursorPos X="15" Y="26"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -48,7 +48,7 @@
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="uFrameClientes"/>
         <CursorPos X="41" Y="16"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -62,7 +62,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="38"/>
         <CursorPos X="28" Y="70"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
       </Unit4>
       <Unit5>
         <Filename Value="u_dm_principal.pas"/>
@@ -73,7 +73,7 @@
         <EditorIndex Value="7"/>
         <TopLine Value="6"/>
         <CursorPos X="43" Y="29"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit5>
@@ -83,7 +83,7 @@
         <UnitName Value="UDF_VARS"/>
         <EditorIndex Value="9"/>
         <CursorPos X="40" Y="22"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="51"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
@@ -92,9 +92,11 @@
         <ComponentName Value="FrameConfiguracao"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="41" Y="36"/>
-        <UsageCount Value="38"/>
+        <TopLine Value="5"/>
+        <CursorPos X="21" Y="41"/>
+        <UsageCount Value="40"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit7>
@@ -105,11 +107,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMensagem"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="58"/>
-        <CursorPos X="34" Y="58"/>
-        <UsageCount Value="37"/>
+        <TopLine Value="60"/>
+        <CursorPos X="13" Y="87"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit8>
@@ -117,8 +118,9 @@
         <Filename Value="telas\ushowmsg.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="4"/>
-        <CursorPos X="21" Y="13"/>
-        <UsageCount Value="36"/>
+        <TopLine Value="16"/>
+        <CursorPos X="13" Y="53"/>
+        <UsageCount Value="38"/>
         <Loaded Value="True"/>
       </Unit9>
       <Unit10>
@@ -178,130 +180,130 @@
         <EditorIndex Value="3"/>
         <TopLine Value="972"/>
         <CursorPos X="29" Y="992"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit17>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="65" Column="52" TopLine="39"/>
+        <Caret Line="118" Column="24" TopLine="98"/>
       </Position1>
       <Position2>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="66" Column="47" TopLine="45"/>
+        <Caret Line="131" Column="9" TopLine="111"/>
       </Position2>
       <Position3>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="65" Column="19" TopLine="45"/>
+        <Caret Line="160" Column="9" TopLine="140"/>
       </Position3>
       <Position4>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="69" Column="35" TopLine="45"/>
+        <Caret Line="108" Column="34" TopLine="98"/>
       </Position4>
       <Position5>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="68" Column="35" TopLine="44"/>
+        <Filename Value="telas\ushowmsg.pas"/>
+        <Caret Line="34" Column="24" TopLine="15"/>
       </Position5>
       <Position6>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="67" Column="53" TopLine="38"/>
+        <Caret Line="115" Column="4" TopLine="97"/>
       </Position6>
       <Position7>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="68" Column="53" TopLine="39"/>
+        <Caret Line="118" Column="19" TopLine="100"/>
       </Position7>
       <Position8>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="53" Column="3" TopLine="40"/>
+        <Caret Line="117" Column="17" TopLine="98"/>
       </Position8>
       <Position9>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="67" Column="11" TopLine="40"/>
+        <Caret Line="32" Column="50" TopLine="76"/>
       </Position9>
       <Position10>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="66" Column="11" TopLine="39"/>
+        <Caret Line="33" Column="50" TopLine="33"/>
       </Position10>
       <Position11>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="67" Column="11" TopLine="40"/>
+        <Caret Line="34" Column="50" TopLine="34"/>
       </Position11>
       <Position12>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="66" Column="35" TopLine="42"/>
+        <Caret Line="35" Column="50" TopLine="35"/>
       </Position12>
       <Position13>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="59" Column="12" TopLine="45"/>
+        <Caret Line="34" Column="50" TopLine="34"/>
       </Position13>
       <Position14>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="64" Column="23" TopLine="45"/>
+        <Caret Line="35" Column="50" TopLine="35"/>
       </Position14>
       <Position15>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="58" Column="15" TopLine="45"/>
+        <Caret Line="34" Column="50" TopLine="34"/>
       </Position15>
       <Position16>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="79" Column="5" TopLine="58"/>
+        <Caret Line="35" Column="50" TopLine="35"/>
       </Position16>
       <Position17>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="27" Column="43" TopLine="30"/>
+        <Caret Line="127" Column="17" TopLine="90"/>
       </Position17>
       <Position18>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="90" Column="55"/>
+        <Caret Line="85" Column="7" TopLine="83"/>
       </Position18>
       <Position19>
-        <Filename Value="telas\ushowmsg.pas"/>
-        <Caret Line="36" Column="19" TopLine="7"/>
+        <Filename Value="telas\umensagem.pas"/>
+        <Caret Line="80" Column="7" TopLine="78"/>
       </Position19>
       <Position20>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="90" Column="55"/>
+        <Filename Value="telas\uFrameConfiguracao.pas"/>
+        <Caret Line="40" Column="24" TopLine="5"/>
       </Position20>
       <Position21>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="91" Column="55" TopLine="51"/>
+        <Caret Line="142" Column="24" TopLine="106"/>
       </Position21>
       <Position22>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="92" Column="55" TopLine="52"/>
+        <Caret Line="72" Column="2" TopLine="57"/>
       </Position22>
       <Position23>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="93" Column="55" TopLine="53"/>
+        <Caret Line="88" Column="12"/>
       </Position23>
       <Position24>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="92" Column="55" TopLine="52"/>
+        <Filename Value="telas\ushowmsg.pas"/>
+        <Caret Line="51" Column="27" TopLine="15"/>
       </Position24>
       <Position25>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="91" Column="55" TopLine="51"/>
+        <Caret Line="136" Column="18" TopLine="100"/>
       </Position25>
       <Position26>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="90" Column="55" TopLine="50"/>
+        <Filename Value="telas\ushowmsg.pas"/>
+        <Caret Line="51" Column="27" TopLine="15"/>
       </Position26>
       <Position27>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="58" Column="66" TopLine="29"/>
+        <Filename Value="telas\ushowmsg.pas"/>
+        <Caret Line="39" Column="36" TopLine="15"/>
       </Position27>
       <Position28>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="57" Column="34" TopLine="59"/>
+        <Filename Value="telas\ushowmsg.pas"/>
+        <Caret Line="51" Column="19" TopLine="15"/>
       </Position28>
       <Position29>
-        <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="58" Column="34" TopLine="58"/>
+        <Filename Value="telas\ushowmsg.pas"/>
+        <Caret Line="45" Column="25" TopLine="16"/>
       </Position29>
       <Position30>
         <Filename Value="telas\umensagem.pas"/>
-        <Caret Line="57" Column="34" TopLine="57"/>
+        <Caret Line="39" Column="19" TopLine="23"/>
       </Position30>
     </JumpHistory>
     <RunParams>

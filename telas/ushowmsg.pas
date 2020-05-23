@@ -12,6 +12,7 @@ procedure msgsucesso(msg:string);
 procedure msgerro(msg:string);
 procedure msgatencao(msg:string);
 procedure msginformacao(msg:string);
+function msgconfirmacao(msg:string):boolean;
 
 implementation
 
@@ -41,6 +42,15 @@ begin
 _frmmsg := TfrmMensagem.Create(nil);
 _frmmsg.msginformacao(msg);
 _frmmsg.Show;
+end;
+
+function msgconfirmacao(msg: string): boolean;
+begin
+_frmmsg := TfrmMensagem.Create(nil);
+_frmmsg.msgconfimacao(msg);
+_frmmsg.ShowModal;
+result :=_frmmsg.resp;
+_frmmsg.Free;
 end;
 
 end.
