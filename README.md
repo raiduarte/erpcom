@@ -8,6 +8,8 @@ Plataforma Windows.
 Banco de Dados MariaDB superior a 8.0
 COMPONENTES
 RDW - restdataware para conexão.
+ACBR - Emissão de Notas e mais.
+Zeos - conector.
 
 Objetivo.
 Ser um erp completo que atenda todas as necessidades dos setores de uma empresa, como vendas, fiscal, estoque, financeiro, compras, administracao, rh etc...
