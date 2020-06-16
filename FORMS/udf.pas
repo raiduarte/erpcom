@@ -156,21 +156,21 @@ end;
 
 procedure DBImportaImagemFromTImage(Image: TImage; FDataSet: TDataSet;
   sCampo: String);
-  var
-    MemoryStream : TMemoryStream;
-    Jpg : TJpegImage;
-  const
-    OffsetMemoryStream : Int64 = 0;
-  begin
-    MemoryStream:=TMemoryStream.Create;
-    Jpg:=TJPEGImage.Create;
-    Jpg.Assign(Image.Picture.Graphic);
-    Jpg.SaveToStream(MemoryStream);
-    MemoryStream.Position:=OffsetMemoryStream;
-    (FDataSet.FieldByName(sCampo) as TBlobField).BlobType:=ftBlob;
-    (FDataSet.FieldByName(sCampo) as TBlobField).LoadFromStream(MemoryStream);
-    MemoryStream.Free;
-    Jpg.Free;
+var
+  MemoryStream : TMemoryStream;
+  Jpg : TJpegImage;
+const
+  OffsetMemoryStream : Int64 = 0;
+begin
+  MemoryStream:=TMemoryStream.Create;
+  Jpg:=TJPEGImage.Create;
+  Jpg.Assign(Image.Picture.Bitmap);
+  Jpg.SaveToStream(MemoryStream);
+  MemoryStream.Position:=OffsetMemoryStream;
+  (FDataSet.FieldByName(sCampo) as TBlobField).BlobType:=ftBlob;
+  (FDataSet.FieldByName(sCampo) as TBlobField).LoadFromStream(MemoryStream);
+  MemoryStream.Free;
+  Jpg.Free;
 end;
 
 procedure DBExportaImagem(const FDataSet: TDataSet; sCampo: String;

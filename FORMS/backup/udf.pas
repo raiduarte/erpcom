@@ -21,7 +21,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, sqldb, db, ExtCtrls, graphics, Buttons, Controls,
-  StdCtrls, ZConnection, ZDataset, LCLType, ualertamodal, uShowSplash, DBCtrls,
+  StdCtrls, ZConnection, ZDataset, LCLType, ualertamodal, DBCtrls,
   Math, Dialogs, fileinfo, winpeimagereader, elfreader, machoreader;
 
 var
@@ -128,7 +128,6 @@ procedure ConfiguraButtons(FDataSet: TDataSet; buttons: array of TSpeedButton;
   condicoes: array of Boolean); overload;
 function  GetVersionInfo(sVerOrBuild: String): String;
 function  AlertaModal(Mensagem: String; MB_MODAL_ICON: Cardinal): Cardinal;
-procedure ShowSplash(Mensagem: String; Evento: TNotifyEvent);
 procedure DestacaCampo(Sender: TOBject);
 procedure ConfiguraStatusBar(StatusBar: TLabel; FDataSet: TDataSet);
 function CriaPanelBase(FramePontoDeMontagem: TFrame): TPanel;
@@ -157,21 +156,21 @@ end;
 
 procedure DBImportaImagemFromTImage(Image: TImage; FDataSet: TDataSet;
   sCampo: String);
-  var
-    MemoryStream : TMemoryStream;
-    Jpg : TJpegImage;
-  const
-    OffsetMemoryStream : Int64 = 0;
-  begin
-    MemoryStream:=TMemoryStream.Create;
-    Jpg:=TJPEGImage.Create;
-    Jpg.Assign(Image.Picture.Graphic);
-    Jpg.SaveToStream(MemoryStream);
-    MemoryStream.Position:=OffsetMemoryStream;
-    (FDataSet.FieldByName(sCampo) as TBlobField).BlobType:=ftBlob;
-    (FDataSet.FieldByName(sCampo) as TBlobField).LoadFromStream(MemoryStream);
-    MemoryStream.Free;
-    Jpg.Free;
+var
+  MemoryStream : TMemoryStream;
+  Jpg : TJpegImage;
+const
+  OffsetMemoryStream : Int64 = 0;
+begin
+  MemoryStream:=TMemoryStream.Create;
+  Jpg:=TJPEGImage.Create;
+  Jpg.Assign(Image.Picture);
+  Jpg.SaveToStream(MemoryStream);
+  MemoryStream.Position:=OffsetMemoryStream;
+  (FDataSet.FieldByName(sCampo) as TBlobField).BlobType:=ftBlob;
+  (FDataSet.FieldByName(sCampo) as TBlobField).LoadFromStream(MemoryStream);
+  MemoryStream.Free;
+  Jpg.Free;
 end;
 
 procedure DBExportaImagem(const FDataSet: TDataSet; sCampo: String;
@@ -350,18 +349,6 @@ begin
   finally
     Result:=FormAlertaModal.GetModalResult;
     FreeAndNil(FormAlertaModal);
-  end;
-end;
-
-procedure ShowSplash(Mensagem: String; Evento: TNotifyEvent);
-begin
-  try
-    FormShowSplash:=TFormShowSplash.Create(Application);
-    FormShowSplash.lblMensagem.Caption:=Mensagem;
-    FormShowSplash.Show;
-    FormShowSplash.Update;
-  finally
-    FreeAndNil(FormShowSplash);
   end;
 end;
 

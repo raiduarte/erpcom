@@ -1,44 +1,43 @@
 object FormShowSplash: TFormShowSplash
   Left = 614
-  Height = 138
+  Height = 110
   Top = 429
-  Width = 698
+  Width = 558
   BorderStyle = bsNone
   Caption = 'FormShowSplash'
-  ClientHeight = 138
-  ClientWidth = 698
+  ClientHeight = 110
+  ClientWidth = 558
   Color = clWhite
-  DesignTimePPI = 120
   OnCreate = FormCreate
-  OnResize = FormResize
-  LCLVersion = '2.0.6.0'
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
   object Shape1: TShape
     Left = 0
-    Height = 138
+    Height = 110
     Top = 0
-    Width = 698
+    Width = 558
     Align = alClient
     Pen.Color = clGray
   end
   object Image1: TImage
-    Left = 63
+    Left = 50
     Height = 48
-    Top = 43
+    Top = 34
     Width = 48
     AutoSize = True
     Center = True
     Transparent = True
   end
   object lblMensagem: TLabel
-    Left = 133
-    Height = 80
-    Top = 29
-    Width = 502
+    Left = 106
+    Height = 64
+    Top = 23
+    Width = 402
     AutoSize = False
     Caption = 'lblMensagem'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -16
+    Font.Height = -13
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -54,8 +53,8 @@ object FormShowSplash: TFormShowSplash
     Scaled = True
     ShareImages = True
     Width = 48
-    left = 58
-    top = 74
+    left = 46
+    top = 59
     Bitmap = {
       4C69070000003000000030000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF

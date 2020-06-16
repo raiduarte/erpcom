@@ -35,13 +35,11 @@ type
   private
 
   public
-
+    nTag: Integer;
   end;
 
 var
   FormPainelDeControleProgramasSelecionarIcone: TFormPainelDeControleProgramasSelecionarIcone;
-
-  nTag: Integer;
 
 const
   COR_FUNDO = clHighlight;
@@ -72,10 +70,6 @@ end;
 procedure TFormPainelDeControleProgramasSelecionarIcone.btnSelecionarClick(
   Sender: TObject);
 begin
-  if(Sender is TPanel)then
-    nTag:=(Sender as TPanel).Tag
-  else if(Sender is TImage)then
-    nTag:=(Sender as TImage).Tag;
   Self.Close;
 end;
 
@@ -97,6 +91,8 @@ begin
       (ScrollBox1.Components[i] as TPanel).Color:=COR_FUNDO;
 
   (Sender as TPanel).Color:=clRed;
+
+  nTag:=(Sender as TComponent).Tag;
 end;
 
 procedure TFormPainelDeControleProgramasSelecionarIcone.FormShow(Sender: TObject

@@ -259,22 +259,22 @@ var
   dataset: TZQuery;
   sql: String;
 begin
-  ////sql:='INSERT INTO sis_permissoes (usuarioID, programaID) VALUES (:usuarioID, :programaID);';
-  ////dataset:=TZQuery.Create(Self);
-  ////dataset.Connection:=CONEXAO;
-  ////dataset.SQL.Clear;
-  ////dataset.SQL.Add(sql);
-  ////dataset.ParamByName('usuarioID').AsInteger:=usuarioID;
-  ////dataset.ParamByName('programaID').AsInteger:=programaID;
-  ////dataset.ExecSQL;
-  ////dbgPermissoesDoUsuario.DataSource.DataSet.Refresh;
-  ////dataset.Close;
-  ////dataset.Free;
-  ////
-  ////AtualizaGridEsquerdo(AtualizaListaDeIDs(usuarioID));
-  //
-  ////dbgPermissoesDoUsuario.DataSource.DataSet.Refresh;
-  ////dbgPermissoesDisponiveis.DataSource.DataSet.Refresh;
+  sql:='INSERT INTO sis_permissoes (usuarioID, programaID) VALUES (:usuarioID, :programaID);';
+  dataset:=TZQuery.Create(Self);
+  dataset.Connection:=CONEXAO;
+  dataset.SQL.Clear;
+  dataset.SQL.Add(sql);
+  dataset.ParamByName('usuarioID').AsInteger:=usuarioID;
+  dataset.ParamByName('programaID').AsInteger:=programaID;
+  dataset.ExecSQL;
+  dbgPermissoesDoUsuario.DataSource.DataSet.Refresh;
+  dataset.Close;
+  dataset.Free;
+
+  AtualizaGridEsquerdo(AtualizaListaDeIDs(usuarioID));
+
+  dbgPermissoesDoUsuario.DataSource.DataSet.Refresh;
+  dbgPermissoesDisponiveis.DataSource.DataSet.Refresh;
 end;
 
 procedure TFramePainelDeControleUsuarios.dtsProgsDispDataChange(
@@ -334,7 +334,7 @@ end;
 
 procedure TFramePainelDeControleUsuarios.btnRemoverPermissaoClick(Sender: TObject);
 begin
-//  RemoverPermissao(dbgPermissoesDoUsuario.DataSource.DataSet.FieldByName('permissaoID').AsInteger)
+  RemoverPermissao(dbgPermissoesDoUsuario.DataSource.DataSet.FieldByName('permissaoID').AsInteger)
 end;
 
 procedure TFramePainelDeControleUsuarios.btnAddicionarPermissaoClick(Sender: TObject);

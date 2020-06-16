@@ -120,7 +120,7 @@ implementation
 
 procedure TFramePainelDeControleUsuarios.btnVoltarClick(Sender: TObject);
 begin
-  if(dtsUsuarios.DataSet.State in [dsEdit, dsInsert])then begin
+if(dtsUsuarios.DataSet.State in [dsEdit, dsInsert])then begin
     if(AlertaModal('Existem informações que ainda não foram salvas.'+#13+'Continuar assim mesmo?', MB_ICONQUESTION+MB_YESNO)=IDYES)then begin
       dtsUsuarios.DataSet.Cancel;
       FreeAndNil(vParentPanel)

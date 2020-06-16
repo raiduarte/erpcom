@@ -19,7 +19,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="8"/>
+      <BuildNr Value="9"/>
       <StringTable Comments="Lazaro FX" CompanyName="E2W-STI" FileDescription="Lazaro.exe" InternalName="Lazaro.exe"/>
     </VersionInfo>
     <BuildModes Count="2">

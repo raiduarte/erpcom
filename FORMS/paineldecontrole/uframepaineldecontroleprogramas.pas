@@ -54,6 +54,7 @@ type
     procedure btnSalvarClick(Sender: TObject);
     procedure btnSelecionaIconeClick(Sender: TObject);
     procedure btnVoltarClick(Sender: TObject);
+    procedure dtsIconesDataChange(Sender: TObject; Field: TField);
     procedure dtsProgramasStateChange(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
   private
@@ -71,13 +72,23 @@ implementation
 
 procedure TFramePainelDeControleProgramas.btnVoltarClick(Sender: TObject);
 begin
-  if(dtsProgramas.DataSet.State in [dsEdit, dsInsert])then
+  if(dtsProgramas.DataSet.State in [dsEdit, dsInsert])then begin
     if(AlertaModal('Existem informações que ainda não foram salvas.'+#13+'Continuar assim mesmo?', MB_ICONQUESTION+MB_YESNO)=IDYES)then begin
       dtsProgramas.DataSet.Cancel;
       FreeAndNil(vParentPanel)
     end
+  end
   else
     FreeAndNil(vParentPanel);
+end;
+
+procedure TFramePainelDeControleProgramas.dtsIconesDataChange(Sender: TObject;
+  Field: TField);
+begin
+  if(not dtsProgramas.DataSet.FieldByName('icone').IsNull)then
+     DBExportaImagem(dtsProgramas.DataSet, 'icone', Image1)
+  else
+    Image1.Picture:=null;
 end;
 
 procedure TFramePainelDeControleProgramas.dtsProgramasStateChange(
@@ -101,17 +112,20 @@ end;
 
 procedure TFramePainelDeControleProgramas.btnSelecionaIconeClick(Sender: TObject
   );
+var
+  n: Integer;
 begin
   try
     FormPainelDeControleProgramasSelecionarIcone:=TFormPainelDeControleProgramasSelecionarIcone.Create(Self);
     FormPainelDeControleProgramasSelecionarIcone.ShowModal;
   finally
     Image1.Picture:=nil;
-ShowMessage(IntToStr(FormPainelDeControleProgramasSelecionarIcone.nTag));
-    dtsIcones.DataSet.Locate('iconeID', FormPainelDeControleProgramasSelecionarIcone.nTag, []);
+    n:=FormPainelDeControleProgramasSelecionarIcone.nTag;
+    dtsIcones.DataSet.Locate('iconeID', n, []);
     DBExportaPNGImagem(dtsIcones.DataSet, 'icone', Image1);
     if(dtsProgramas.DataSet.State=dsBrowse)then begin
       dtsProgramas.DataSet.Edit;
+    dtsProgramas.DataSet.FieldByName('icone').AsVariant:=dtsIcones.DataSet.FieldByName('icone').AsVariant;
     end;
     FreeAndNil(FormPainelDeControleProgramasSelecionarIcone);
   end;

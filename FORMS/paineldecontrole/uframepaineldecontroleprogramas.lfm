@@ -1,32 +1,31 @@
 object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
   Left = 0
-  Height = 716
+  Height = 573
   Top = 0
-  Width = 1050
+  Width = 840
   Align = alClient
-  ClientHeight = 716
-  ClientWidth = 1050
+  ClientHeight = 573
+  ClientWidth = 840
   Color = clWhite
-  DesignTimePPI = 120
   ParentColor = False
   ParentFont = False
   TabOrder = 0
-  DesignLeft = 585
-  DesignTop = 99
+  DesignLeft = 507
+  DesignTop = 133
   object Panel1: TPanel
     Left = 0
-    Height = 716
+    Height = 573
     Top = 0
-    Width = 1050
+    Width = 840
     Align = alClient
     BevelOuter = bvNone
     BorderWidth = 5
-    ClientHeight = 716
-    ClientWidth = 1050
+    ClientHeight = 573
+    ClientWidth = 840
     Color = clBtnFace
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -15
+    Font.Height = -12
     Font.Name = 'Century Gothic'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -35,18 +34,18 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
     TabOrder = 0
     object Panel2: TPanel
       Left = 5
-      Height = 668
-      Top = 43
-      Width = 1040
+      Height = 533
+      Top = 35
+      Width = 830
       Align = alClient
       BevelOuter = bvNone
       BorderWidth = 5
-      ClientHeight = 668
-      ClientWidth = 1040
+      ClientHeight = 533
+      ClientWidth = 830
       Color = clWhite
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
-      Font.Height = -15
+      Font.Height = -12
       Font.Name = 'Century Gothic'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
@@ -55,16 +54,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
       TabOrder = 0
       object Panel4: TPanel
         Left = 5
-        Height = 60
+        Height = 48
         Top = 5
-        Width = 1030
+        Width = 820
         Align = alTop
         BevelOuter = bvNone
-        ClientHeight = 60
-        ClientWidth = 1030
+        ClientHeight = 48
+        ClientWidth = 820
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
-        Font.Height = -15
+        Font.Height = -12
         Font.Name = 'Century Gothic'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -72,16 +71,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
         TabOrder = 0
         object Panel5: TPanel
           Left = 0
-          Height = 60
+          Height = 48
           Top = 0
-          Width = 262
+          Width = 210
           Align = alLeft
           BevelOuter = bvNone
-          ClientHeight = 60
-          ClientWidth = 262
+          ClientHeight = 48
+          ClientWidth = 210
           Font.CharSet = ANSI_CHARSET
           Font.Color = clBlack
-          Font.Height = -15
+          Font.Height = -12
           Font.Name = 'Century Gothic'
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
@@ -89,16 +88,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           TabOrder = 0
           object btnSalvar: TSpeedButton
             Cursor = crHandPoint
-            Left = 8
-            Height = 31
-            Top = 19
-            Width = 79
+            Left = 6
+            Height = 25
+            Top = 15
+            Width = 63
             Caption = 'Salvar'
             Color = 4227072
             Flat = True
             Font.CharSet = ANSI_CHARSET
             Font.Color = clWhite
-            Font.Height = -14
+            Font.Height = -11
             Font.Name = 'Segoe UI'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
@@ -108,16 +107,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           end
           object btnCancelar: TSpeedButton
             Cursor = crHandPoint
-            Left = 94
-            Height = 31
-            Top = 19
-            Width = 79
+            Left = 75
+            Height = 25
+            Top = 15
+            Width = 63
             Caption = 'Cancelar'
             Color = 4305918
             Flat = True
             Font.CharSet = ANSI_CHARSET
             Font.Color = clWhite
-            Font.Height = -14
+            Font.Height = -11
             Font.Name = 'Segoe UI'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
@@ -127,16 +126,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           end
           object btnExcluir: TSpeedButton
             Cursor = crHandPoint
-            Left = 178
-            Height = 31
-            Top = 19
-            Width = 79
+            Left = 142
+            Height = 25
+            Top = 15
+            Width = 63
             Caption = 'Excluir'
             Color = 204
             Flat = True
             Font.CharSet = ANSI_CHARSET
             Font.Color = clWhite
-            Font.Height = -14
+            Font.Height = -11
             Font.Name = 'Segoe UI'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
@@ -145,17 +144,17 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           end
         end
         object Panel6: TPanel
-          Left = 768
-          Height = 60
+          Left = 610
+          Height = 48
           Top = 0
-          Width = 262
+          Width = 210
           Align = alRight
           BevelOuter = bvNone
-          ClientHeight = 60
-          ClientWidth = 262
+          ClientHeight = 48
+          ClientWidth = 210
           Font.CharSet = ANSI_CHARSET
           Font.Color = clBlack
-          Font.Height = -15
+          Font.Height = -12
           Font.Name = 'Century Gothic'
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
@@ -163,16 +162,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           TabOrder = 1
           object btnVoltar: TSpeedButton
             Cursor = crHandPoint
-            Left = 178
-            Height = 31
-            Top = 19
-            Width = 79
+            Left = 142
+            Height = 25
+            Top = 15
+            Width = 63
             Caption = 'Voltar'
             Color = 13408512
             Flat = True
             Font.CharSet = ANSI_CHARSET
             Font.Color = clWhite
-            Font.Height = -14
+            Font.Height = -11
             Font.Name = 'Segoe UI'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
@@ -184,14 +183,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
       end
       object lblStatusBar: TLabel
         Left = 5
-        Height = 20
-        Top = 643
-        Width = 1030
+        Height = 17
+        Top = 511
+        Width = 820
         Align = alBottom
         Caption = 'lblStatusBar'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
-        Font.Height = -15
+        Font.Height = -12
         Font.Name = 'Century Gothic'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -202,25 +201,25 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
       object Shape2: TShape
         Left = 5
         Height = 1
-        Top = 65
-        Width = 1030
+        Top = 53
+        Width = 820
         Align = alTop
         Pen.Color = clGray
       end
       object Panel7: TPanel
         Left = 5
-        Height = 577
-        Top = 66
-        Width = 1030
+        Height = 457
+        Top = 54
+        Width = 820
         Align = alClient
         BevelOuter = bvNone
         BorderWidth = 5
-        ClientHeight = 577
-        ClientWidth = 1030
+        ClientHeight = 457
+        ClientWidth = 820
         Color = clBtnFace
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
-        Font.Height = -15
+        Font.Height = -12
         Font.Name = 'Century Gothic'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -229,18 +228,18 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
         TabOrder = 1
         object Panel8: TPanel
           Left = 5
-          Height = 567
+          Height = 447
           Top = 5
-          Width = 1020
+          Width = 810
           Align = alClient
           BevelOuter = bvNone
           BorderWidth = 3
-          ClientHeight = 567
-          ClientWidth = 1020
+          ClientHeight = 447
+          ClientWidth = 810
           Color = clWhite
           Font.CharSet = ANSI_CHARSET
           Font.Color = clBlack
-          Font.Height = -15
+          Font.Height = -12
           Font.Name = 'Segoe UI'
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
@@ -249,21 +248,21 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           TabOrder = 0
           object ScrollBox1: TScrollBox
             Left = 3
-            Height = 557
-            Top = 7
-            Width = 1014
-            HorzScrollBar.Page = 433
-            VertScrollBar.Increment = 31
-            VertScrollBar.Page = 310
+            Height = 438
+            Top = 6
+            Width = 804
+            HorzScrollBar.Page = 346
+            VertScrollBar.Increment = 24
+            VertScrollBar.Page = 248
             VertScrollBar.Smooth = True
             VertScrollBar.Tracking = True
             Align = alClient
             BorderStyle = bsNone
-            ClientHeight = 557
-            ClientWidth = 1014
+            ClientHeight = 438
+            ClientWidth = 804
             Font.CharSet = ANSI_CHARSET
             Font.Color = clBlack
-            Font.Height = -15
+            Font.Height = -12
             Font.Name = 'Segoe UI'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
@@ -271,30 +270,30 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
             TabOrder = 0
             object Panel10: TPanel
               Left = 0
-              Height = 310
+              Height = 248
               Top = 0
-              Width = 1014
+              Width = 804
               Align = alTop
               BevelOuter = bvNone
-              ClientHeight = 310
-              ClientWidth = 1014
+              ClientHeight = 248
+              ClientWidth = 804
               Font.CharSet = ANSI_CHARSET
               Font.Color = clBlack
-              Font.Height = -15
+              Font.Height = -12
               Font.Name = 'Segoe UI'
               Font.Pitch = fpVariable
               Font.Quality = fqDraft
               ParentFont = False
               TabOrder = 0
               object Label2: TLabel
-                Left = 32
-                Height = 20
-                Top = 16
-                Width = 65
+                Left = 26
+                Height = 15
+                Top = 13
+                Width = 52
                 Caption = 'Programa'
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -302,16 +301,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 ParentFont = False
               end
               object edtNome: TDBEdit
-                Left = 32
-                Height = 28
-                Top = 36
-                Width = 400
+                Left = 26
+                Height = 23
+                Top = 29
+                Width = 320
                 DataField = 'programa'
                 DataSource = dtsProgramas
                 CharCase = ecNormal
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -320,14 +319,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 TabOrder = 0
               end
               object Label3: TLabel
-                Left = 32
-                Height = 20
-                Top = 76
-                Width = 108
+                Left = 26
+                Height = 15
+                Top = 61
+                Width = 85
                 Caption = 'Breve descrição '
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -335,16 +334,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 ParentFont = False
               end
               object edtUsuario: TDBEdit
-                Left = 32
-                Height = 28
-                Top = 96
-                Width = 400
+                Left = 26
+                Height = 23
+                Top = 77
+                Width = 320
                 DataField = 'hint'
                 DataSource = dtsProgramas
                 CharCase = ecLowerCase
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -353,14 +352,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 TabOrder = 1
               end
               object Label5: TLabel
-                Left = 32
-                Height = 20
-                Top = 140
-                Width = 72
+                Left = 26
+                Height = 15
+                Top = 112
+                Width = 58
                 Caption = 'Formulário'
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -368,14 +367,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 ParentFont = False
               end
               object Label6: TLabel
-                Left = 32
-                Height = 20
-                Top = 200
-                Width = 36
+                Left = 26
+                Height = 15
+                Top = 160
+                Width = 29
                 Caption = 'Ícone'
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -383,16 +382,16 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 ParentFont = False
               end
               object edtUsuario1: TDBEdit
-                Left = 32
-                Height = 28
-                Top = 160
-                Width = 368
+                Left = 26
+                Height = 23
+                Top = 128
+                Width = 294
                 DataField = 'formulario'
                 DataSource = dtsProgramas
-                CharCase = ecLowerCase
+                CharCase = ecNormal
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -401,18 +400,18 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 TabOrder = 2
               end
               object Panel12: TPanel
-                Left = 32
-                Height = 58
-                Top = 230
-                Width = 58
+                Left = 26
+                Height = 46
+                Top = 184
+                Width = 46
                 BevelOuter = bvLowered
                 BorderWidth = 2
-                ClientHeight = 58
-                ClientWidth = 58
+                ClientHeight = 46
+                ClientWidth = 46
                 Color = clActiveCaption
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -421,22 +420,22 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
                 TabOrder = 3
                 object Image1: TImage
                   Left = 3
-                  Height = 52
+                  Height = 40
                   Top = 3
-                  Width = 52
+                  Width = 40
                   Align = alClient
                   Center = True
                 end
               end
               object SpeedButton1: TSpeedButton
                 Cursor = crHandPoint
-                Left = 404
-                Height = 28
-                Top = 160
-                Width = 29
+                Left = 323
+                Height = 22
+                Top = 128
+                Width = 23
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -481,13 +480,13 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
               end
               object btnSelecionaIcone: TSpeedButton
                 Cursor = crHandPoint
-                Left = 100
-                Height = 28
-                Top = 230
-                Width = 29
+                Left = 80
+                Height = 22
+                Top = 184
+                Width = 23
                 Font.CharSet = ANSI_CHARSET
                 Font.Color = clBlack
-                Font.Height = -15
+                Font.Height = -12
                 Font.Name = 'Segoe UI'
                 Font.Pitch = fpVariable
                 Font.Quality = fqDraft
@@ -534,14 +533,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
           end
           object Panel9: TPanel
             Left = 3
-            Height = 4
+            Height = 3
             Top = 3
-            Width = 1014
+            Width = 804
             Align = alTop
             BevelOuter = bvNone
             Font.CharSet = ANSI_CHARSET
             Font.Color = clBlack
-            Font.Height = -15
+            Font.Height = -12
             Font.Name = 'Segoe UI'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
@@ -553,17 +552,17 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
     end
     object Panel3: TPanel
       Left = 5
-      Height = 38
+      Height = 30
       Top = 5
-      Width = 1040
+      Width = 830
       Align = alTop
       BevelOuter = bvNone
-      ClientHeight = 38
-      ClientWidth = 1040
+      ClientHeight = 30
+      ClientWidth = 830
       Color = 16314343
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
-      Font.Height = -15
+      Font.Height = -12
       Font.Name = 'Century Gothic'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
@@ -571,14 +570,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
       ParentFont = False
       TabOrder = 1
       object Label1: TLabel
-        Left = 11
-        Height = 21
-        Top = 4
-        Width = 176
+        Left = 9
+        Height = 17
+        Top = 3
+        Width = 150
         Caption = ' Manutenção de Usuários'
         Font.CharSet = ANSI_CHARSET
         Font.Color = 5195575
-        Font.Height = -16
+        Font.Height = -13
         Font.Name = 'Segoe UI'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -588,14 +587,14 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
       object Shape1: TShape
         Left = 0
         Height = 2
-        Top = 36
-        Width = 1040
+        Top = 28
+        Width = 830
         Align = alBottom
         Pen.Color = 9330468
       end
       object Panel11: TPanel
-        Left = 979
-        Height = 36
+        Left = 783
+        Height = 28
         Top = 0
         Width = 0
         Align = alRight
@@ -603,7 +602,7 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
         BevelOuter = bvNone
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
-        Font.Height = -15
+        Font.Height = -12
         Font.Name = 'Century Gothic'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -611,15 +610,15 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
         TabOrder = 0
       end
       object DBText1: TDBText
-        Left = 979
-        Height = 36
+        Left = 783
+        Height = 28
         Top = 0
-        Width = 61
+        Width = 47
         Align = alRight
         DataField = 'programa'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
-        Font.Height = -19
+        Font.Height = -15
         Font.Name = 'Segoe UI Light'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -632,17 +631,18 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
   object dtsProgramas: TDataSource
     DataSet = dm_painel_de_controle.sqlProgramas
     OnStateChange = dtsProgramasStateChange
-    left = 590
-    top = 220
+    left = 472
+    top = 176
   end
   object dtsIcones: TDataSource
     DataSet = dm_painel_de_controle.sqlIcones
-    left = 599
-    top = 294
+    OnDataChange = dtsIconesDataChange
+    left = 472
+    top = 235
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Frame|*.pas'
-    left = 589
-    top = 150
+    left = 471
+    top = 120
   end
 end

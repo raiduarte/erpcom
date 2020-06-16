@@ -1,16 +1,15 @@
 object FrameMenu: TFrameMenu
   Left = 0
-  Height = 381
+  Height = 305
   Top = 0
-  Width = 255
+  Width = 204
   Align = alClient
-  ClientHeight = 381
-  ClientWidth = 255
+  ClientHeight = 305
+  ClientWidth = 204
   Color = 9330468
-  DesignTimePPI = 120
   Font.CharSet = ANSI_CHARSET
   Font.Color = clWhite
-  Font.Height = -15
+  Font.Height = -12
   Font.Name = 'Segoe UI Light'
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
@@ -21,15 +20,15 @@ object FrameMenu: TFrameMenu
   DesignTop = 85
   object PanelMenu: TPanel
     Left = 0
-    Height = 381
+    Height = 305
     Top = 0
-    Width = 255
+    Width = 204
     Align = alClient
     BevelOuter = bvNone
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
-    Font.Height = -15
-    Font.Name = 'Century Gothic'
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
@@ -38,12 +37,12 @@ object FrameMenu: TFrameMenu
   object Timer1: TTimer
     Interval = 1
     OnTimer = Timer1Timer
-    left = 64
-    top = 33
+    left = 51
+    top = 26
   end
   object ImageList1: TImageList
-    left = 64
-    top = 118
+    left = 51
+    top = 94
     Bitmap = {
       4C69090000001000000010000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

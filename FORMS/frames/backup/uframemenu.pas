@@ -90,7 +90,7 @@ begin
 
   try
     FormShowSplash:=TFormShowSplash.Create(Self);
-    FormShowSplash.lblMensagem.Caption:='Carregando as informações do seu perfil';
+    FormShowSplash.lblMensagem.Caption:='Configurando o seu perfil de usuário';
     FormShowSplash.Show;
     FormShowSplash.Update;
 

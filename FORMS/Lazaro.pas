@@ -44,8 +44,6 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TFormPrincipal, FormPrincipal);
-  Application.CreateForm(TFormPainelDeControleProgramasSelecionarIcone, 
-    FormPainelDeControleProgramasSelecionarIcone);
   Application.Run;
 end.
 

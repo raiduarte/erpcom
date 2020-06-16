@@ -18,7 +18,6 @@ type
     lblMensagem: TLabel;
     Shape1: TShape;
     procedure FormCreate(Sender: TObject);
-    procedure FormResize(Sender: TObject);
   private
 
   public
@@ -38,12 +37,6 @@ procedure TFormShowSplash.FormCreate(Sender: TObject);
 begin
   Image1.Picture:=nil;
   ImageList1.GetBitmap(2, Image1.Picture.Bitmap);
-end;
-
-procedure TFormShowSplash.FormResize(Sender: TObject);
-begin
-  lblMensagem.Caption:='Aguarde um momento, requisitando a sua solicitação...';
-  lblMensagem.Update;
 end;
 
 end.

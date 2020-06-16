@@ -71,11 +71,12 @@ implementation
 
 procedure TFramePainelDeControleProgramas.btnVoltarClick(Sender: TObject);
 begin
-  if(dtsProgramas.DataSet.State in [dsEdit, dsInsert])then
+  if(dtsProgramas.DataSet.State in [dsEdit, dsInsert])then begin
     if(AlertaModal('Existem informações que ainda não foram salvas.'+#13+'Continuar assim mesmo?', MB_ICONQUESTION+MB_YESNO)=IDYES)then begin
       dtsProgramas.DataSet.Cancel;
       FreeAndNil(vParentPanel)
     end
+  end
   else
     FreeAndNil(vParentPanel);
 end;
@@ -101,16 +102,20 @@ end;
 
 procedure TFramePainelDeControleProgramas.btnSelecionaIconeClick(Sender: TObject
   );
+var
+  n: Integer;
 begin
   try
     FormPainelDeControleProgramasSelecionarIcone:=TFormPainelDeControleProgramasSelecionarIcone.Create(Self);
     FormPainelDeControleProgramasSelecionarIcone.ShowModal;
   finally
     Image1.Picture:=nil;
-    dtsIcones.DataSet.Locate('iconeID', FormPainelDeControleProgramasSelecionarIcone.nTag, []);
+    n:=FormPainelDeControleProgramasSelecionarIcone.nTag;
+    dtsIcones.DataSet.Locate('iconeID', n, []);
     DBExportaPNGImagem(dtsIcones.DataSet, 'icone', Image1);
     if(dtsProgramas.DataSet.State=dsBrowse)then begin
       dtsProgramas.DataSet.Edit;
+    dtsProgramas.DataSet.FieldByName('icone').AsVariant:=dtsIcones.DataSet.FieldByName('icone').AsVariant;
     end;
     FreeAndNil(FormPainelDeControleProgramasSelecionarIcone);
   end;
