@@ -636,7 +636,8 @@ object FramePainelDeControleProgramas: TFramePainelDeControleProgramas
   end
   object dtsIcones: TDataSource
     DataSet = dm_painel_de_controle.sqlIcones
-    left = 479
+    OnDataChange = dtsIconesDataChange
+    left = 472
     top = 235
   end
   object OpenDialog1: TOpenDialog

@@ -1,16 +1,15 @@
 object FrameLogin: TFrameLogin
   Left = 0
-  Height = 791
+  Height = 593
   Top = 0
-  Width = 1048
+  Width = 735
   Align = alClient
-  ClientHeight = 791
-  ClientWidth = 1048
+  ClientHeight = 593
+  ClientWidth = 735
   Color = clGradientInactiveCaption
-  DesignTimePPI = 120
   Font.CharSet = ANSI_CHARSET
   Font.Color = clBlack
-  Font.Height = -15
+  Font.Height = -12
   Font.Name = 'Century Gothic'
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
@@ -18,21 +17,21 @@ object FrameLogin: TFrameLogin
   ParentColor = False
   ParentFont = False
   TabOrder = 0
-  DesignLeft = 295
-  DesignTop = 84
+  DesignLeft = 294
+  DesignTop = 83
   object Image1: TImage
     Left = 0
-    Height = 791
+    Height = 593
     Top = 0
-    Width = 1048
+    Width = 735
     Align = alClient
     Stretch = True
   end
   object Image2: TImage
-    Left = 30
-    Height = 70
-    Top = 30
-    Width = 156
+    Left = 24
+    Height = 56
+    Top = 24
+    Width = 125
     Picture.Data = {
       1754506F727461626C654E6574776F726B47726170686963DD5D000089504E47
       0D0A1A0A0000000D49484452000000E8000000A0080600000006A22079000000
@@ -791,25 +790,25 @@ object FrameLogin: TFrameLogin
     Transparent = True
   end
   object edtUsuario: TLabeledEdit
-    Left = 228
-    Height = 31
-    Top = 294
-    Width = 290
+    Left = 182
+    Height = 25
+    Top = 235
+    Width = 232
     AutoSize = False
-    EditLabel.Height = 21
-    EditLabel.Width = 290
+    EditLabel.Height = 17
+    EditLabel.Width = 232
     EditLabel.Caption = 'Usuário'
     EditLabel.ParentColor = False
     EditLabel.ParentFont = False
     EditLabel.Font.CharSet = ANSI_CHARSET
     EditLabel.Font.Color = clWhite
-    EditLabel.Font.Height = -16
+    EditLabel.Font.Height = -13
     EditLabel.Font.Name = 'Segoe UI'
     EditLabel.Font.Pitch = fpVariable
     EditLabel.Font.Quality = fqDraft
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -16
+    Font.Height = -13
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -819,26 +818,26 @@ object FrameLogin: TFrameLogin
     OnKeyDown = edtUsuarioKeyDown
   end
   object edtSenha: TLabeledEdit
-    Left = 225
-    Height = 31
-    Top = 356
-    Width = 291
+    Left = 180
+    Height = 25
+    Top = 285
+    Width = 233
     AutoSize = False
     EchoMode = emPassword
-    EditLabel.Height = 21
-    EditLabel.Width = 291
+    EditLabel.Height = 17
+    EditLabel.Width = 233
     EditLabel.Caption = 'Senha '
     EditLabel.ParentColor = False
     EditLabel.ParentFont = False
     EditLabel.Font.CharSet = ANSI_CHARSET
     EditLabel.Font.Color = clWhite
-    EditLabel.Font.Height = -16
+    EditLabel.Font.Height = -13
     EditLabel.Font.Name = 'Segoe UI'
     EditLabel.Font.Pitch = fpVariable
     EditLabel.Font.Quality = fqDraft
     Font.CharSet = SYMBOL_CHARSET
     Font.Color = clBlack
-    Font.Height = -16
+    Font.Height = -13
     Font.Name = 'Wingdings'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -846,18 +845,18 @@ object FrameLogin: TFrameLogin
     PasswordChar = 'l'
     TabOrder = 1
     OnChange = edtUsuarioChange
-    OnKeyDown = edtUsuarioKeyDown
+    OnKeyDown = edtSenhaKeyDown
   end
   object btnConfirmar: TSpeedButton
     Cursor = crHandPoint
-    Left = 484
-    Height = 31
-    Top = 396
-    Width = 31
+    Left = 387
+    Height = 25
+    Top = 317
+    Width = 25
     Flat = True
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -15
+    Font.Height = -12
     Font.Name = 'Century Gothic'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -941,16 +940,16 @@ object FrameLogin: TFrameLogin
     ParentFont = False
   end
   object lblMensagem: TLabel
-    Left = 228
-    Height = 56
-    Top = 428
-    Width = 288
+    Left = 182
+    Height = 45
+    Top = 342
+    Width = 230
     Alignment = taCenter
     AutoSize = False
     Caption = 'Usuário ou senha informados estão incorretos'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
-    Font.Height = -18
+    Font.Height = -14
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -960,15 +959,15 @@ object FrameLogin: TFrameLogin
     WordWrap = True
   end
   object lblHora: TLabel
-    Left = 610
-    Height = 166
-    Top = 112
-    Width = 380
+    Left = 488
+    Height = 133
+    Top = 90
+    Width = 304
     Alignment = taCenter
     Caption = 'lblHora'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
-    Font.Height = -125
+    Font.Height = -100
     Font.Name = 'Segoe UI Light'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -977,16 +976,16 @@ object FrameLogin: TFrameLogin
     ParentFont = False
   end
   object lblData: TLabel
-    Left = 610
-    Height = 21
-    Top = 228
-    Width = 288
+    Left = 488
+    Height = 17
+    Top = 182
+    Width = 230
     Alignment = taCenter
     AutoSize = False
     Caption = 'lblData'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clInactiveBorder
-    Font.Height = -16
+    Font.Height = -13
     Font.Name = 'Segoe UI Light'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -998,14 +997,14 @@ object FrameLogin: TFrameLogin
   object Timer1: TTimer
     Interval = 1
     OnTimer = Timer1Timer
-    left = 220
-    top = 450
+    left = 176
+    top = 360
   end
   object Timer2: TTimer
     Enabled = False
     Interval = 700
     OnTimer = Timer2Timer
-    left = 216
-    top = 544
+    left = 173
+    top = 435
   end
 end

@@ -10,17 +10,15 @@ object dm_principal: Tdm_principal
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True
     ClientCodepage = 'utf8'
-    Catalog = 'lazaro'
     Properties.Strings = (
       'AutoEncodeStrings=ON'
       'codepage=utf8'
     )
     SQLHourGlass = True
-    HostName = '192.168.25.151'
+    HostName = 'localhost'
     Port = 3306
-    Database = 'lazaro'
-    User = 'lazaro'
-    Password = 'lazaro'
+    Database = 'erpcom'
+    User = 'root'
     Protocol = 'MariaDB-10'
     left = 328
     top = 16

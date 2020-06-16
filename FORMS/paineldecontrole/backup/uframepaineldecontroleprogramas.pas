@@ -54,6 +54,7 @@ type
     procedure btnSalvarClick(Sender: TObject);
     procedure btnSelecionaIconeClick(Sender: TObject);
     procedure btnVoltarClick(Sender: TObject);
+    procedure dtsIconesDataChange(Sender: TObject; Field: TField);
     procedure dtsProgramasStateChange(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
   private
@@ -79,6 +80,15 @@ begin
   end
   else
     FreeAndNil(vParentPanel);
+end;
+
+procedure TFramePainelDeControleProgramas.dtsIconesDataChange(Sender: TObject;
+  Field: TField);
+begin
+  if(not dtsProgramas.DataSet.FieldByName('icone').IsNull)then
+     DBExportaImagem(dtsProgramas.DataSet, 'icone', Image1)
+  else
+    Image1.Picture:=null;
 end;
 
 procedure TFramePainelDeControleProgramas.dtsProgramasStateChange(

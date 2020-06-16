@@ -1,33 +1,31 @@
 object dm_principal: Tdm_principal
   OnCreate = DataModuleCreate
   OldCreateOrder = False
-  Height = 640
-  HorizontalOffset = 773
-  VerticalOffset = 96
-  Width = 873
-  PPI = 120
+  Height = 512
+  HorizontalOffset = 618
+  VerticalOffset = 77
+  Width = 698
+  PPI = 96
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True
     ClientCodepage = 'utf8'
-    Catalog = 'lazaro'
     Properties.Strings = (
       'AutoEncodeStrings=ON'
       'codepage=utf8'
     )
     SQLHourGlass = True
-    HostName = '192.168.1.251'
+    HostName = 'localhost'
     Port = 3306
-    Database = 'lazaro'
+    Database = 'erpcom'
     User = 'lazaro'
-    Password = 'lazaro'
     Protocol = 'MariaDB-10'
-    left = 410
-    top = 20
+    left = 328
+    top = 16
   end
   object ZQuery1: TZQuery
     Params = <>
-    left = 461
-    top = 164
+    left = 369
+    top = 131
   end
 end

@@ -27,7 +27,7 @@ type
   { TFormPrincipal }
 
   TFormPrincipal = class(TForm)
-    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormClose(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
@@ -43,15 +43,13 @@ implementation
 
 uses
   u_dm_principal,
-  udf_vars,
   uFrameLogin;
 
 {$R *.lfm}
 
 { TFormPrincipal }
 
-procedure TFormPrincipal.FormClose(Sender: TObject;
-  var CloseAction: TCloseAction);
+procedure TFormPrincipal.FormClose(Sender: TObject);
 begin
   FreeAndNil(dm_principal);
 end;

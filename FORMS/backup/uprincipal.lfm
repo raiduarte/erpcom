@@ -1,8 +1,8 @@
 object FormPrincipal: TFormPrincipal
-  Left = 412
-  Height = 413
-  Top = 450
-  Width = 617
+  Left = -8
+  Height = 369
+  Top = -8
+  Width = 510
   Caption = 'FormPrincipal'
   Color = clWhite
   Font.CharSet = ANSI_CHARSET
@@ -14,6 +14,5 @@ object FormPrincipal: TFormPrincipal
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  LCLVersion = '2.0.8.0'
   WindowState = wsMaximized
 end

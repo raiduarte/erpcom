@@ -88,7 +88,7 @@ begin
   if(not dtsProgramas.DataSet.FieldByName('icone').IsNull)then
      DBExportaImagem(dtsProgramas.DataSet, 'icone', Image1)
   else
-    Image1.Picture:=null;
+    Image1.Picture:=nil;
 end;
 
 procedure TFramePainelDeControleProgramas.dtsProgramasStateChange(

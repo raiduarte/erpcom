@@ -21,7 +21,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, ExtCtrls, Buttons, StdCtrls, math,
-  udf_vars, UDF, uShowSplash, u_dm_painel_de_controle, uFramePrincipal, LCLType,
+  UDF, u_dm_painel_de_controle, uFramePrincipal, LCLType,
   Dialogs;
 
 type
@@ -39,6 +39,8 @@ type
     lblMensagem: TLabel;
     Timer1: TTimer;
     Timer2: TTimer;
+    procedure edtSenhaKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState
+      );
     procedure ExibirAlerta(Sender: TOBject; LabelMensagem: TLabel; Mensagem: String);
     procedure edtUsuarioChange(Sender: TObject);
     procedure edtUsuarioKeyDown(Sender: TObject; var Key: Word;
@@ -81,7 +83,7 @@ var
   i: Integer;
   dir_path, file_path, image_jpg: String;
 const
-  CENARIO_DIR = 'CENARIO';
+  CENARIO_DIR = '..\CENARIO';
 begin
   inherited Create(AOwner);
   file_path:=EmptyStr;
@@ -130,13 +132,19 @@ procedure TFrameLogin.edtUsuarioKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   if(Key=VK_RETURN)then
-    btnConfirmarClick(Sender);
+    edtSenha.SetFocus;
 end;
 
 procedure TFrameLogin.ExibirAlerta(Sender: TOBject; LabelMensagem: TLabel;
   Mensagem: String);
 begin
   LabelMensagem.Caption:=Mensagem;
+end;
+
+procedure TFrameLogin.edtSenhaKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+ btnConfirmarClick(Sender);
 end;
 
 procedure TFrameLogin.edtUsuarioChange(Sender: TObject);
