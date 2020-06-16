@@ -1,0 +1,11 @@
+object FormPainelDeControleProgramasSelecionaIcone: TFormPainelDeControleProgramasSelecionaIcone
+  Left = 340
+  Height = 600
+  Top = 110
+  Width = 900
+  BorderStyle = bsNone
+  Caption = 'FormPainelDeControleProgramasSelecionaIcone'
+  Color = clWhite
+  DesignTimePPI = 120
+  LCLVersion = '2.0.6.0'
+end

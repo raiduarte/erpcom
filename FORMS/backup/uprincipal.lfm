@@ -1,0 +1,19 @@
+object FormPrincipal: TFormPrincipal
+  Left = 412
+  Height = 413
+  Top = 450
+  Width = 617
+  Caption = 'FormPrincipal'
+  Color = clWhite
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Century Gothic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.0.8.0'
+  WindowState = wsMaximized
+end

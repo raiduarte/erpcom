@@ -1,0 +1,576 @@
+object FrameClientesDados: TFrameClientesDados
+  Left = 0
+  Height = 460
+  Top = 0
+  Width = 793
+  Align = alClient
+  ClientHeight = 460
+  ClientWidth = 793
+  Color = clWhite
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Century Gothic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 510
+  DesignTop = 139
+  object Panel1: TPanel
+    Left = 0
+    Height = 460
+    Top = 0
+    Width = 793
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 5
+    ClientHeight = 460
+    ClientWidth = 793
+    Color = clBtnFace
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Century Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 5
+      Height = 420
+      Top = 35
+      Width = 783
+      Align = alClient
+      BevelOuter = bvNone
+      BorderWidth = 5
+      ClientHeight = 420
+      ClientWidth = 783
+      Color = clWhite
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Century Gothic'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      object Panel4: TPanel
+        Left = 5
+        Height = 48
+        Top = 5
+        Width = 773
+        Align = alTop
+        BevelOuter = bvNone
+        ClientHeight = 48
+        ClientWidth = 773
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 0
+        object Panel5: TPanel
+          Left = 0
+          Height = 48
+          Top = 0
+          Width = 210
+          Align = alLeft
+          BevelOuter = bvNone
+          ClientHeight = 48
+          ClientWidth = 210
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Century Gothic'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 0
+          object btnSalvar: TSpeedButton
+            Cursor = crHandPoint
+            Left = 8
+            Height = 25
+            Top = 15
+            Width = 63
+            Caption = 'Salvar'
+            Color = 4227072
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnSalvarClick
+            ParentFont = False
+          end
+          object btnCancelar: TSpeedButton
+            Cursor = crHandPoint
+            Left = 75
+            Height = 25
+            Top = 15
+            Width = 63
+            Caption = 'Cancelar'
+            Color = 4305918
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnCancelarClick
+            ParentFont = False
+          end
+          object btnExcluir: TSpeedButton
+            Cursor = crHandPoint
+            Left = 142
+            Height = 25
+            Top = 15
+            Width = 63
+            Caption = 'Excluir'
+            Color = 204
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnExcluirClick
+            ParentFont = False
+          end
+        end
+        object Panel6: TPanel
+          Left = 563
+          Height = 48
+          Top = 0
+          Width = 210
+          Align = alRight
+          BevelOuter = bvNone
+          ClientHeight = 48
+          ClientWidth = 210
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Century Gothic'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+          object btnVoltar: TSpeedButton
+            Cursor = crHandPoint
+            Left = 142
+            Height = 25
+            Top = 15
+            Width = 63
+            Caption = 'Voltar'
+            Color = 13408512
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnVoltarClick
+            ParentFont = False
+          end
+        end
+      end
+      object lblStatusBar: TLabel
+        Left = 5
+        Height = 17
+        Top = 398
+        Width = 773
+        Align = alBottom
+        Caption = 'lblStatusBar'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape2: TShape
+        Left = 5
+        Height = 1
+        Top = 53
+        Width = 773
+        Align = alTop
+        Pen.Color = clGray
+      end
+      object Panel7: TPanel
+        Left = 5
+        Height = 344
+        Top = 54
+        Width = 773
+        Align = alClient
+        BevelOuter = bvNone
+        BorderWidth = 5
+        ClientHeight = 344
+        ClientWidth = 773
+        Color = clBtnFace
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        object Panel8: TPanel
+          Left = 5
+          Height = 334
+          Top = 5
+          Width = 763
+          Align = alClient
+          BevelOuter = bvNone
+          BorderWidth = 3
+          ClientHeight = 334
+          ClientWidth = 763
+          Color = clWhite
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Century Gothic'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+          TabOrder = 0
+          object Label2: TLabel
+            Left = 128
+            Height = 17
+            Top = 8
+            Width = 36
+            Caption = 'Nome'
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentColor = False
+            ParentFont = False
+          end
+          object edtNome: TDBEdit
+            Left = 128
+            Height = 25
+            Top = 26
+            Width = 350
+            DataField = 'nome'
+            DataSource = dtsClientes
+            CharCase = ecUppercase
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            MaxLength = 0
+            ParentFont = False
+            TabOrder = 1
+          end
+          object Panel9: TPanel
+            Left = 3
+            Height = 328
+            Top = 3
+            Width = 120
+            Align = alLeft
+            BevelOuter = bvNone
+            BorderWidth = 3
+            ClientHeight = 328
+            ClientWidth = 120
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentFont = False
+            TabOrder = 2
+            object Panel10: TPanel
+              Left = 3
+              Height = 157
+              Top = 3
+              Width = 114
+              Align = alTop
+              BevelOuter = bvLowered
+              BorderWidth = 2
+              ClientHeight = 157
+              ClientWidth = 114
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clBlack
+              Font.Height = -12
+              Font.Name = 'Century Gothic'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              ParentFont = False
+              TabOrder = 0
+              object Image1: TImage
+                Left = 3
+                Height = 151
+                Top = 3
+                Width = 108
+                Align = alClient
+                Stretch = True
+              end
+            end
+          end
+          object Label3: TLabel
+            Left = 128
+            Height = 17
+            Top = 64
+            Width = 29
+            Caption = 'Sexo'
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentColor = False
+            ParentFont = False
+          end
+          object edtSexo: TDBComboBox
+            Left = 128
+            Height = 25
+            Top = 84
+            Width = 40
+            DataField = 'sexo'
+            DataSource = dtsClientes
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ItemHeight = 17
+            Items.Strings = (
+              'M'
+              'F'
+            )
+            MaxLength = 0
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 3
+          end
+          object Label4: TLabel
+            Left = 192
+            Height = 17
+            Top = 64
+            Width = 72
+            Caption = 'Nascimento'
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentColor = False
+            ParentFont = False
+          end
+          object edtNascimento: TDBDateTimePicker
+            Left = 192
+            Height = 25
+            Top = 84
+            Width = 91
+            DataField = 'data_nascimento'
+            DataSource = dtsClientes
+            ReadOnly = False
+            CenturyFrom = 1941
+            MaxDate = 2958465
+            MinDate = -53780
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentFont = False
+            TabOrder = 4
+            TrailingSeparator = False
+            TextForNullDate = 'NULL'
+            LeadingZeros = True
+            Kind = dtkDate
+            TimeFormat = tf24
+            TimeDisplay = tdHMS
+            DateMode = dmComboBox
+            UseDefaultSeparators = True
+            HideDateTimeParts = []
+            MonthNames = 'Long'
+            OnChange = edtNascimentoChange
+          end
+          object Label5: TLabel
+            Left = 296
+            Height = 17
+            Top = 64
+            Width = 35
+            Caption = 'Idade'
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentColor = False
+            ParentFont = False
+          end
+          object edtIdade: TDBEdit
+            Left = 296
+            Height = 25
+            Top = 82
+            Width = 36
+            DataField = 'idade'
+            DataSource = dtsClientes
+            CharCase = ecNormal
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            MaxLength = 0
+            ParentFont = False
+            TabOrder = 0
+            TabStop = False
+          end
+          object Label6: TLabel
+            Left = 128
+            Height = 17
+            Top = 120
+            Width = 72
+            Caption = 'Núm Celular'
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentColor = False
+            ParentFont = False
+          end
+          object edtCelular: TDBEdit
+            Left = 128
+            Height = 25
+            Top = 138
+            Width = 150
+            DataField = 'celular'
+            DataSource = dtsClientes
+            CharCase = ecNormal
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = 'Century Gothic'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            MaxLength = 0
+            ParentFont = False
+            TabOrder = 5
+          end
+        end
+      end
+    end
+    object Panel3: TPanel
+      Left = 5
+      Height = 30
+      Top = 5
+      Width = 783
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 30
+      ClientWidth = 783
+      Color = 16314343
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Century Gothic'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 9
+        Height = 17
+        Top = 3
+        Width = 153
+        Caption = ' Manutenção de Clientes '
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape1: TShape
+        Left = 0
+        Height = 2
+        Top = 28
+        Width = 783
+        Align = alBottom
+        Pen.Color = 9330468
+      end
+      object Panel11: TPanel
+        Left = 736
+        Height = 28
+        Top = 0
+        Width = 47
+        Align = alRight
+        AutoSize = True
+        BevelOuter = bvNone
+        ClientHeight = 28
+        ClientWidth = 47
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 0
+        object DBText1: TDBText
+          Left = 0
+          Height = 28
+          Top = 0
+          Width = 47
+          Align = alClient
+          DataField = 'nome'
+          DataSource = dtsClientes
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Century Gothic'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object dtsClientes: TDataSource
+    OnStateChange = dtsClientesStateChange
+    OnDataChange = dtsClientesDataChange
+    left = 440
+    top = 40
+  end
+end

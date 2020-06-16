@@ -1,0 +1,161 @@
+object FrameInicio: TFrameInicio
+  Left = 0
+  Height = 441
+  Top = 0
+  Width = 832
+  Align = alClient
+  ClientHeight = 441
+  ClientWidth = 832
+  Color = clWhite
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -15
+  Font.Name = 'Century Gothic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 474
+  DesignTop = 121
+  object Panel1: TPanel
+    Left = 0
+    Height = 441
+    Top = 0
+    Width = 832
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 5
+    ClientHeight = 441
+    ClientWidth = 832
+    Color = clBtnFace
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Century Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 5
+      Height = 393
+      Top = 43
+      Width = 822
+      Align = alClient
+      BevelOuter = bvNone
+      BorderWidth = 5
+      Color = clWhite
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Century Gothic'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Panel3: TPanel
+      Left = 5
+      Height = 38
+      Top = 5
+      Width = 822
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 38
+      ClientWidth = 822
+      Color = 16314343
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Century Gothic'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 11
+        Height = 21
+        Top = 4
+        Width = 45
+        Caption = ' Início '
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 5195575
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape1: TShape
+        Left = 0
+        Height = 2
+        Top = 36
+        Width = 822
+        Align = alBottom
+        Pen.Color = clTeal
+      end
+      object Panel4: TPanel
+        Left = 785
+        Height = 36
+        Top = 0
+        Width = 37
+        Align = alRight
+        BevelOuter = bvNone
+        ClientHeight = 36
+        ClientWidth = 37
+        TabOrder = 0
+        object btnFeharFrame: TSpeedButton
+          Cursor = crHandPoint
+          Left = 6
+          Height = 28
+          Top = 2
+          Width = 29
+          Flat = True
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF0000009F0000000008000000100000000800009F0000009F0000009F000000
+            9F0000000008000000100000000800009F00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF0000000008010193A60101A3FF010193A6000000080101A3000101A3000000
+            0008010193A60101A3FF010193A600000008FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000101A19D0101A8FF0005E9FF0101A8FF010196A100000008000000080101
+            96A10101A8FF0005E9FF0101A8FF0101A19DFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000202AFFF4D56F1FF0310EBFF000DEAFF0202AEFB02029AA402029AA40202
+            AEFB000DEAFF0310EBFF4D56F1FF0202AFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000404B6960404B6FF4A59F1FF0319EEFF0016EDFF0404B5FB0404B5FB0016
+            EDFF0319EEFF4A59F1FF0404B6FF0404B696FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000505BE000505BE8D0505BEF64A61F3FF0324F0FF0020EFFF0020EFFF0324
+            F0FF4A61F3FF0505BEF60505BE8D0505BE00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000606C5000606C5000606C0910606C3F8022CF1FF0022EFFF0022EFFF022C
+            F1FF0606C3F80606C0910606C5000606C500FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000707CD00000000080606B7A10707CBFB0034F5FF032DF2FF032DF2FF0034
+            F5FF0707CBFB0606B7A1000000080707CD00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00000000080707BEA10808D3FB003FF8FF0342F9FF4B76FAFF4B76FAFF0342
+            F9FF003FF8FF0808D3FB0707BEA100000008FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000A0AD39D0A0ADCFF0048FBFF034BFCFF4B7CFCFF0A0ADCF60A0ADCF64B7C
+            FCFF034BFCFF0048FBFF0A0ADCFF0A0AD39DFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000B0BE3FF4D86FEFF0051FEFF4B82FDFF0B0BE3F60B0BE38D0B0BE38D0B0B
+            E3F64B82FDFF0051FEFF4D86FEFF0B0BE3FFFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000B0BE8960B0BE8FF4D89FFFF0B0BE8FF0B0BE88D0B0BE8000B0BE8000B0B
+            E88D0B0BE8FF4D89FFFF0B0BE8FF0B0BE896FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF000C0CEC000C0CEC960C0CECFF0C0CEC960C0CEC000C0CEC000C0CEC000C0C
+            EC000C0CEC960C0CECFF0C0CEC960C0CEC00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+          }
+          OnClick = btnFeharFrameClick
+        end
+      end
+    end
+  end
+end

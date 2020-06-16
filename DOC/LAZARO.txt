@@ -1,0 +1,16 @@
+Lazaro Administração de Igrejas Evangélicas
+
+ - Lazaro Sistema
+  - Registro
+  - Cadastros
+    -- Membros 
+    -- Células
+    -- Visitantes 
+  - Agenda de Compromissos 
+  - Aniversariantes 
+  - Controle Patrimonial
+
+ - Lazaro Administração de Células 
+  - 
+
+https://stackoverflow.com/questions/2182657/in-my-custom-component-how-can-i-augment-the-mouse-enter-and-leave-events

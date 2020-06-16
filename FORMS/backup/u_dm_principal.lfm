@@ -1,0 +1,39 @@
+object dm_principal: Tdm_principal
+  OldCreateOrder = False
+  Height = 512
+  HorizontalOffset = 441
+  VerticalOffset = 97
+  Width = 698
+  PPI = 96
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    ClientCodepage = 'utf8'
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+      'codepage=utf8'
+    )
+    Port = 0
+    Protocol = 'MariaDB-10'
+    left = 64
+    top = 32
+  end
+  object sqlUsuarios: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 64
+    top = 104
+  end
+  object sqlProgramas: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 144
+    top = 104
+  end
+  object sqlPermissoes: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 232
+    top = 104
+  end
+end

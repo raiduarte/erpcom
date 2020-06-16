@@ -1,0 +1,22 @@
+object FrameAlertaModal: TFrameAlertaModal
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = clWhite
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 435
+  DesignTop = 97
+  object Panel1: TPanel
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+  end
+end

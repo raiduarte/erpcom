@@ -1,0 +1,860 @@
+object dm_painel_de_controle: Tdm_painel_de_controle
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 1030
+  HorizontalOffset = 0
+  VerticalOffset = 0
+  Width = 1822
+  PPI = 120
+  object sqlUsuarios: TZQuery
+    Connection = dm_principal.ZConnection1
+    SortedFields = 'nome'
+    UpdateObject = updUsuarios
+    SQL.Strings = (
+      'SELECT * '
+      '  FROM sis_usuarios '
+      'ORDER BY nome    '
+    )
+    Params = <>
+    IndexFieldNames = 'nome Asc'
+    left = 204
+    top = 48
+    object sqlUsuariosusuarioID: TLongintField
+      FieldKind = fkData
+      FieldName = 'usuarioID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlUsuariosnome: TStringField
+      DisplayLabel = 'Nome '
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object sqlUsuariosusuario: TStringField
+      DisplayLabel = 'Usuário '
+      FieldKind = fkData
+      FieldName = 'usuario'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object sqlUsuariossenha: TStringField
+      DisplayLabel = 'Senha '
+      FieldKind = fkData
+      FieldName = 'senha'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 80
+    end
+    object sqlUsuariossituacao: TSmallintField
+      FieldKind = fkData
+      FieldName = 'situacao'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlUsuariossuperusuario: TSmallintField
+      FieldKind = fkData
+      FieldName = 'superusuario'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object sqlProgramas: TZQuery
+    Connection = dm_principal.ZConnection1
+    SortedFields = 'programa'
+    SQL.Strings = (
+      'SELECT * '
+      '  FROM sis_programas '
+      'ORDER BY programa'
+    )
+    Params = <>
+    IndexFieldNames = 'programa Asc'
+    left = 312
+    top = 48
+    object sqlProgramasprogramaID: TLongintField
+      FieldKind = fkData
+      FieldName = 'programaID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgramasprograma: TStringField
+      DisplayLabel = 'Programa '
+      FieldKind = fkData
+      FieldName = 'programa'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object sqlProgramashint: TStringField
+      DisplayLabel = 'Mensagem Explicativa '
+      FieldKind = fkData
+      FieldName = 'hint'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object sqlProgramasformulario: TStringField
+      DisplayLabel = 'Formulário '
+      FieldKind = fkData
+      FieldName = 'formulario'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlProgramasicone: TBlobField
+      DisplayLabel = 'Ícone'
+      FieldKind = fkData
+      FieldName = 'icone'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgramassistema: TSmallintField
+      FieldKind = fkData
+      FieldName = 'sistema'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object sqlPermissoes: TZQuery
+    Connection = dm_principal.ZConnection1
+    SQL.Strings = (
+      'SELECT *'
+      '  FROM sis_permissoes'
+      '  WHERE usuarioID = :usuarioID '
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'usuarioID'
+        ParamType = ptUnknown
+      end>
+    left = 424
+    top = 48
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'usuarioID'
+        ParamType = ptUnknown
+      end>
+    object sqlPermissoespermissaoID: TLongintField
+      FieldKind = fkData
+      FieldName = 'permissaoID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoesusuarioID: TLongintField
+      FieldKind = fkData
+      FieldName = 'usuarioID'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlPermissoesprogramaID: TLongintField
+      FieldKind = fkData
+      FieldName = 'programaID'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object StringField1: TStringField
+      DisplayLabel = 'Programa '
+      FieldKind = fkLookup
+      FieldName = 'programa'
+      Index = 3
+      KeyFields = 'programaID'
+      LookupCache = False
+      LookupDataSet = sqlProgramas
+      LookupKeyFields = 'programaID'
+      LookupResultField = 'programa'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object sqlPermissoespode_ler: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_ler'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoespode_alterar: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_alterar'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoespode_adicionar: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_adicionar'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoespode_excluir: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_excluir'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoespode_imprimir: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_imprimir'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoessituacao: TSmallintField
+      FieldKind = fkData
+      FieldName = 'situacao'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlPermissoesFORMULARIO: TStringField
+      FieldKind = fkData
+      FieldName = 'FORMULARIO'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPermissoesICONE: TBlobField
+      FieldKind = fkData
+      FieldName = 'ICONE'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object sqlLogin: TZQuery
+    Connection = dm_principal.ZConnection1
+    SQL.Strings = (
+      'SELECT * '
+      '  FROM sis_usuarios '
+      '  WHERE usuario = :usuario AND '
+      '        senha = :senha'
+    )
+    Params = <    
+      item
+        DataType = ftString
+        Name = 'usuario'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftString
+        Name = 'senha'
+        ParamType = ptInput
+      end>
+    left = 96
+    top = 48
+    ParamData = <    
+      item
+        DataType = ftString
+        Name = 'usuario'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftString
+        Name = 'senha'
+        ParamType = ptInput
+      end>
+    object sqlLoginusuarioID: TLongintField
+      FieldKind = fkData
+      FieldName = 'usuarioID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlLoginnome: TStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object sqlLoginusuario: TStringField
+      FieldKind = fkData
+      FieldName = 'usuario'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 15
+    end
+    object sqlLoginsenha: TStringField
+      FieldKind = fkData
+      FieldName = 'senha'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 80
+    end
+    object sqlLoginsituacao: TSmallintField
+      FieldKind = fkData
+      FieldName = 'situacao'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlLoginsuperusuario: TSmallintField
+      FieldKind = fkData
+      FieldName = 'superusuario'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object updUsuarios: TZUpdateSQL
+    InsertSQL.Strings = (
+      'CALL sp_add_usuario('
+      ':nome, '
+      ':usuario, '
+      ':senha)'
+    )
+    ModifySQL.Strings = (
+      'CALL sp_upd_usuario('
+      ':usuarioID, '
+      ':nome,'
+      ':usuario,'
+      ':senha,'
+      ':situacao'
+      ')'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 832
+    top = 56
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'usuarioID'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'nome'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'usuario'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'senha'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'situacao'
+        ParamType = ptUnknown
+      end>
+  end
+  object sqlAcessos: TZQuery
+    Connection = dm_principal.ZConnection1
+    SQL.Strings = (
+      'SELECT A.*, PROGRAMA, FORMULARIO, ICONE'
+      '  FROM sis_permissoes A '
+      '  LEFT JOIN sis_programas B ON '
+      '    (A.programaID = B.programaID)'
+      '  WHERE usuarioID = :usuarioID '
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'usuarioID'
+        ParamType = ptInput
+      end>
+    DataSource = dtsLogin
+    left = 536
+    top = 48
+    ParamData = <    
+      item
+        DataType = ftInteger
+        Name = 'usuarioID'
+        ParamType = ptInput
+      end>
+    object sqlAcessospermissaoID: TLongintField
+      FieldKind = fkData
+      FieldName = 'permissaoID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlAcessosusuarioID: TLongintField
+      FieldKind = fkData
+      FieldName = 'usuarioID'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlAcessosprogramaID: TLongintField
+      FieldKind = fkData
+      FieldName = 'programaID'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlAcessosposicao: TLongintField
+      FieldKind = fkData
+      FieldName = 'posicao'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlAcessosPROGRAMA: TStringField
+      FieldKind = fkData
+      FieldName = 'PROGRAMA'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object sqlAcessosFORMULARIO: TStringField
+      FieldKind = fkData
+      FieldName = 'FORMULARIO'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlAcessosICONE: TBlobField
+      FieldKind = fkData
+      FieldName = 'ICONE'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+    object sqlAcessospode_ler: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_ler'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlAcessospode_alterar: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_alterar'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlAcessospode_adicionar: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_adicionar'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlAcessospode_excluir: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_excluir'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlAcessospode_imprimir: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_imprimir'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlAcessossituacao: TSmallintField
+      FieldKind = fkData
+      FieldName = 'situacao'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsLogin: TDataSource
+    DataSet = sqlLogin
+    left = 96
+    top = 112
+  end
+  object sqlIcones: TZQuery
+    Connection = dm_principal.ZConnection1
+    SQL.Strings = (
+      'SELECT * FROM sis_icones'
+    )
+    Params = <>
+    left = 648
+    top = 48
+    object sqlIconesiconeID: TLongintField
+      FieldKind = fkData
+      FieldName = 'iconeID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlIconesicone: TBlobField
+      FieldKind = fkData
+      FieldName = 'icone'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlIconesicone2: TBlobField
+      FieldKind = fkData
+      FieldName = 'icone2'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsUsuarios: TDataSource
+    DataSet = sqlUsuarios
+    left = 204
+    top = 112
+  end
+  object sqlProgsUsuario: TZQuery
+    Connection = dm_principal.ZConnection1
+    SQL.Strings = (
+      'SELECT A.*, PROGRAMA '
+      '  FROM sis_permissoes A '
+      '  LEFT JOIN sis_programas B '
+      '    ON (A.programaID = B.programaID)'
+      'WHERE usuarioID = :usuarioID;'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'usuarioID'
+        ParamType = ptUnknown
+      end>
+    DataSource = dtsUsuarios
+    left = 208
+    top = 224
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'usuarioID'
+        ParamType = ptUnknown
+      end>
+    object sqlProgsUsuariopermissaoID: TLongintField
+      FieldKind = fkData
+      FieldName = 'permissaoID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuariousuarioID: TLongintField
+      FieldKind = fkData
+      FieldName = 'usuarioID'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlProgsUsuarioposicao: TLongintField
+      FieldKind = fkData
+      FieldName = 'posicao'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlProgsUsuarioprogramaID: TLongintField
+      FieldKind = fkData
+      FieldName = 'programaID'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlProgsUsuariopode_ler: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_ler'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuariopode_alterar: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_alterar'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuariopode_adicionar: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_adicionar'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuariopode_excluir: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_excluir'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuariopode_imprimir: TSmallintField
+      FieldKind = fkData
+      FieldName = 'pode_imprimir'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuariosituacao: TSmallintField
+      FieldKind = fkData
+      FieldName = 'situacao'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgsUsuarioPROGRAMA: TStringField
+      DisplayLabel = 'Programa '
+      FieldKind = fkData
+      FieldName = 'PROGRAMA'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+  end
+  object sqlProgrsDisponiveis: TZQuery
+    Connection = dm_principal.ZConnection1
+    SortedFields = 'programa'
+    SQL.Strings = (
+      'SELECT * '
+      '  FROM sis_programas '
+      '  WHERE programaID NOT IN ('
+      '    SELECT programaID '
+      '      FROM sis_permissoes '
+      '      WHERE usuarioID = :usuarioID  '
+      '    ORDER BY programaID'
+      '  )'
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'usuarioID'
+        ParamType = ptInput
+      end>
+    IndexFieldNames = 'programa Asc'
+    left = 204
+    top = 392
+    ParamData = <    
+      item
+        DataType = ftInteger
+        Name = 'usuarioID'
+        ParamType = ptInput
+      end>
+    object sqlProgrsDisponiveisprogramaID: TLongintField
+      FieldKind = fkData
+      FieldName = 'programaID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgrsDisponiveisprograma: TStringField
+      FieldKind = fkData
+      FieldName = 'programa'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object sqlProgrsDisponiveishint: TStringField
+      FieldKind = fkData
+      FieldName = 'hint'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object sqlProgrsDisponiveisformulario: TStringField
+      FieldKind = fkData
+      FieldName = 'formulario'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlProgrsDisponiveisicone: TBlobField
+      FieldKind = fkData
+      FieldName = 'icone'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlProgrsDisponiveissistema: TSmallintField
+      FieldKind = fkData
+      FieldName = 'sistema'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsPermissoes: TDataSource
+    DataSet = sqlPermissoes
+    left = 424
+    top = 112
+  end
+  object dtsAcessos: TDataSource
+    left = 536
+    top = 112
+  end
+  object dtsProgramas: TDataSource
+    DataSet = sqlProgramas
+    left = 312
+    top = 112
+  end
+  object dtsIcones: TDataSource
+    DataSet = sqlIcones
+    left = 648
+    top = 112
+  end
+  object dtsProgsUsuario: TDataSource
+    left = 208
+    top = 288
+  end
+  object dtsProgrsDisponiveis: TDataSource
+    DataSet = sqlProgrsDisponiveis
+    left = 204
+    top = 456
+  end
+end

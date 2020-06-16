@@ -1,0 +1,873 @@
+object FramePainelDeControleUsuarios: TFramePainelDeControleUsuarios
+  Left = 0
+  Height = 771
+  Top = 0
+  Width = 880
+  Align = alClient
+  ClientHeight = 771
+  ClientWidth = 880
+  Color = clBtnFace
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 461
+  DesignTop = 103
+  object Panel1: TPanel
+    Left = 0
+    Height = 771
+    Top = 0
+    Width = 880
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 5
+    ClientHeight = 771
+    ClientWidth = 880
+    Color = clBtnFace
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Century Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 5
+      Height = 723
+      Top = 43
+      Width = 870
+      Align = alClient
+      BevelOuter = bvNone
+      BorderWidth = 5
+      ClientHeight = 723
+      ClientWidth = 870
+      Color = clWhite
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Century Gothic'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      object Panel4: TPanel
+        Left = 5
+        Height = 60
+        Top = 5
+        Width = 860
+        Align = alTop
+        BevelOuter = bvNone
+        ClientHeight = 60
+        ClientWidth = 860
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 0
+        object Panel5: TPanel
+          Left = 0
+          Height = 60
+          Top = 0
+          Width = 262
+          Align = alLeft
+          BevelOuter = bvNone
+          ClientHeight = 60
+          ClientWidth = 262
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Century Gothic'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 0
+          object btnSalvar: TSpeedButton
+            Cursor = crHandPoint
+            Left = 8
+            Height = 31
+            Top = 19
+            Width = 79
+            Caption = 'Salvar'
+            Color = 4227072
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -14
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnSalvarClick
+            ParentFont = False
+          end
+          object btnCancelar: TSpeedButton
+            Cursor = crHandPoint
+            Left = 94
+            Height = 31
+            Top = 19
+            Width = 79
+            Caption = 'Cancelar'
+            Color = 4305918
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -14
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnCancelarClick
+            ParentFont = False
+          end
+          object btnExcluir: TSpeedButton
+            Cursor = crHandPoint
+            Left = 178
+            Height = 31
+            Top = 19
+            Width = 79
+            Caption = 'Excluir'
+            Color = 204
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -14
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            ParentFont = False
+          end
+        end
+        object Panel6: TPanel
+          Left = 598
+          Height = 60
+          Top = 0
+          Width = 262
+          Align = alRight
+          BevelOuter = bvNone
+          ClientHeight = 60
+          ClientWidth = 262
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Century Gothic'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+          object btnVoltar: TSpeedButton
+            Cursor = crHandPoint
+            Left = 178
+            Height = 31
+            Top = 19
+            Width = 79
+            Caption = 'Voltar'
+            Color = 13408512
+            Flat = True
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -14
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Transparent = False
+            OnClick = btnVoltarClick
+            ParentFont = False
+          end
+        end
+      end
+      object lblStatusBar: TLabel
+        Left = 5
+        Height = 20
+        Top = 698
+        Width = 860
+        Align = alBottom
+        Caption = 'lblStatusBar'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape2: TShape
+        Left = 5
+        Height = 1
+        Top = 65
+        Width = 860
+        Align = alTop
+        Pen.Color = clGray
+      end
+      object Panel7: TPanel
+        Left = 5
+        Height = 632
+        Top = 66
+        Width = 860
+        Align = alClient
+        BevelOuter = bvNone
+        BorderWidth = 5
+        ClientHeight = 632
+        ClientWidth = 860
+        Color = clBtnFace
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        object Panel8: TPanel
+          Left = 5
+          Height = 622
+          Top = 5
+          Width = 850
+          Align = alClient
+          BevelOuter = bvNone
+          BorderWidth = 3
+          ClientHeight = 622
+          ClientWidth = 850
+          Color = clWhite
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Segoe UI'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+          TabOrder = 0
+          object ScrollBox1: TScrollBox
+            Left = 3
+            Height = 612
+            Top = 7
+            Width = 844
+            HorzScrollBar.Page = 844
+            VertScrollBar.Increment = 50
+            VertScrollBar.Page = 509
+            VertScrollBar.Smooth = True
+            VertScrollBar.Tracking = True
+            Align = alClient
+            BorderStyle = bsNone
+            ClientHeight = 591
+            ClientWidth = 844
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -15
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentFont = False
+            TabOrder = 0
+            object PageControl1: TPageControl
+              Left = 0
+              Height = 591
+              Top = 0
+              Width = 1108
+              ActivePage = TabSheet2
+              Align = alClient
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clBlack
+              Font.Height = -15
+              Font.Name = 'Segoe UI'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              ParentFont = False
+              TabIndex = 1
+              TabOrder = 0
+              OnChange = PageControl1Change
+              OnChanging = PageControl1Changing
+              object TabSheet1: TTabSheet
+                Caption = 'Configuração da Conta de Usuário'
+                ClientHeight = 579
+                ClientWidth = 836
+                Font.CharSet = ANSI_CHARSET
+                Font.Color = clBlack
+                Font.Height = -15
+                Font.Name = 'Segoe UI'
+                Font.Pitch = fpVariable
+                Font.Quality = fqDraft
+                ParentFont = False
+                object Label2: TLabel
+                  Left = 32
+                  Height = 20
+                  Top = 16
+                  Width = 45
+                  Caption = 'Nome '
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  ParentColor = False
+                  ParentFont = False
+                end
+                object edtNome: TDBEdit
+                  Left = 32
+                  Height = 28
+                  Top = 36
+                  Width = 400
+                  DataField = 'nome'
+                  DataSource = dtsUsuarios
+                  CharCase = ecNormal
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  MaxLength = 0
+                  ParentFont = False
+                  TabOrder = 0
+                  OnEnter = edtNomeEnter
+                  OnExit = edtNomeEnter
+                end
+                object Label3: TLabel
+                  Left = 32
+                  Height = 20
+                  Top = 76
+                  Width = 50
+                  Caption = 'Usuário'
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  ParentColor = False
+                  ParentFont = False
+                end
+                object edtUsuario: TDBEdit
+                  Left = 32
+                  Height = 28
+                  Top = 96
+                  Width = 400
+                  DataField = 'usuario'
+                  DataSource = dtsUsuarios
+                  CharCase = ecLowerCase
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  MaxLength = 0
+                  ParentFont = False
+                  TabOrder = 1
+                  OnEnter = edtNomeEnter
+                  OnExit = edtNomeEnter
+                end
+                object Label5: TLabel
+                  Left = 32
+                  Height = 20
+                  Top = 140
+                  Width = 40
+                  Caption = 'Senha'
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  ParentColor = False
+                  ParentFont = False
+                end
+                object edtSenha: TEdit
+                  Left = 32
+                  Height = 28
+                  Top = 160
+                  Width = 286
+                  AutoSize = False
+                  EchoMode = emPassword
+                  Font.CharSet = SYMBOL_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Wingdings'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  OnChange = edtSenhaChange
+                  OnEnter = edtNomeEnter
+                  OnExit = edtNomeEnter
+                  ParentFont = False
+                  PasswordChar = 'l'
+                  TabOrder = 2
+                end
+                object Label6: TLabel
+                  Left = 32
+                  Height = 20
+                  Top = 200
+                  Width = 110
+                  Caption = 'Confirmar Senha'
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  ParentColor = False
+                  ParentFont = False
+                end
+                object edtConfirmarSenha: TEdit
+                  Left = 32
+                  Height = 28
+                  Top = 220
+                  Width = 286
+                  AutoSize = False
+                  EchoMode = emPassword
+                  Font.CharSet = SYMBOL_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Wingdings'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  OnChange = edtSenhaChange
+                  OnEnter = edtNomeEnter
+                  OnExit = edtNomeEnter
+                  ParentFont = False
+                  PasswordChar = 'l'
+                  TabOrder = 3
+                end
+              end
+              object TabSheet2: TTabSheet
+                Caption = 'Permissões de Acesso '
+                ClientHeight = 558
+                ClientWidth = 1100
+                Font.CharSet = ANSI_CHARSET
+                Font.Color = clBlack
+                Font.Height = -15
+                Font.Name = 'Segoe UI'
+                Font.Pitch = fpVariable
+                Font.Quality = fqDraft
+                ParentFont = False
+                object dbgPermissoesDoUsuario: TDBGrid
+                  Left = 32
+                  Height = 436
+                  Top = 40
+                  Width = 490
+                  AlternateColor = clGradientInactiveCaption
+                  AutoEdit = False
+                  AutoFillColumns = True
+                  Color = clWindow
+                  Columns = <                  
+                    item
+                      Title.Caption = 'permissaoID'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'permissaoID'
+                    end                  
+                    item
+                      Title.Caption = 'usuarioID'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'usuarioID'
+                    end                  
+                    item
+                      Title.Caption = 'posicao'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'posicao'
+                    end                  
+                    item
+                      Title.Caption = 'programaID'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'programaID'
+                    end                  
+                    item
+                      Title.Caption = 'pode_ler'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'pode_ler'
+                    end                  
+                    item
+                      Title.Caption = 'pode_alterar'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'pode_alterar'
+                    end                  
+                    item
+                      Title.Caption = 'pode_adicionar'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'pode_adicionar'
+                    end                  
+                    item
+                      Title.Caption = 'pode_excluir'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'pode_excluir'
+                    end                  
+                    item
+                      Title.Caption = 'pode_imprimir'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'pode_imprimir'
+                    end                  
+                    item
+                      Title.Caption = 'situacao'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'situacao'
+                    end                  
+                    item
+                      Title.Caption = 'Programa '
+                      Width = 465
+                      FieldName = 'PROGRAMA'
+                    end>
+                  DataSource = dtsProgsUsuario
+                  FixedCols = 0
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  Options = [dgColumnResize, dgColumnMove, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisableDelete, dgDisableInsert]
+                  ParentFont = False
+                  ReadOnly = True
+                  Scrollbars = ssVertical
+                  TabOrder = 0
+                  TitleFont.CharSet = ANSI_CHARSET
+                  TitleFont.Color = clBlack
+                  TitleFont.Height = -15
+                  TitleFont.Name = 'Segoe UI'
+                  TitleFont.Pitch = fpVariable
+                  TitleFont.Quality = fqDraft
+                  TitleStyle = tsNative
+                end
+                object btnAddicionarPermissao: TSpeedButton
+                  Cursor = crHandPoint
+                  Left = 541
+                  Height = 28
+                  Top = 128
+                  Width = 51
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  Glyph.Data = {
+                    36040000424D3604000000000000360000002800000010000000100000000100
+                    2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009E6C4C3DB68358FFFFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF009E6C4C7B996746FFB68358FFFFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00B0845C07925E41C1B08866FFC3A07FFFB68358FFFFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00A77A56328E5C3FF1BE9976FFD3B488FFCDAB83FFA5714DFFA4704AFFA975
+                    4DFFAC784FFFB17C50FFB48052FFB78354FFBB8453FFB68358FFFFFFFF009A6A
+                    4C74976548FFD4B68EFFC8A371FFB2834AFFBA8F59FFD3B283FFD7B88BFFD7B9
+                    8BFFD6B88AFFD6B88AFFD6B88AFFD7B88BFFEAD7B1FFB68358FF8F5E439A9A6B
+                    4EFFEEDAB2FFD5B279FFC49856FFC49755FFC39955FFC59959FFC49B58FFC49A
+                    58FFC49A58FFC49A58FFC49A58FFC69A59FFDFC494FFB68358FFAF855F039461
+                    44B2AD815DFFE6CC99FFE0C07BFFD9B268FFDEBB75FFE9CF96FFEBD29CFFEAD3
+                    9CFFEAD29BFFEAD29BFFEAD29BFFEAD09CFFF3E3B8FFB68358FFFFFFFF00FFFF
+                    FF00A473506CA47450FFE1C495FFEFD799FFE3C794FFB37F54FFB27D52FFB681
+                    53FFBA8455FFBD8756FFC18C57FFC68E5AFFC79059FFB68358FFFFFFFF00FFFF
+                    FF00FFFFFF00B2855A2AA36E48EACFAB82FFD3B38CFFB68358FFFFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00C0966802AB764DB5B48157FFB68358FFFFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B9885B74B68358FFFFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+                  }
+                  OnClick = btnAddicionarPermissaoClick
+                  ParentFont = False
+                end
+                object btnRemoverPermissao: TSpeedButton
+                  Cursor = crHandPoint
+                  Left = 541
+                  Height = 28
+                  Top = 161
+                  Width = 51
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  Glyph.Data = {
+                    36040000424D3604000000000000360000002800000010000000100000000100
+                    2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B68358FF9E6C
+                    4C3DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B68358FF9967
+                    46FF9E6C4C7BFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B68358FFC3A0
+                    7FFFB08866FF925E41C1B0845C07FFFFFF00FFFFFF00FFFFFF00B68358FFBB84
+                    53FFB78354FFB48052FFB17C50FFAC784FFFA9754DFFA4704AFFA5714DFFCDAB
+                    83FFD3B488FFBE9976FF8E5C3FF1A77A5632FFFFFF00FFFFFF00B68358FFEAD7
+                    B1FFD7B88BFFD6B88AFFD6B88AFFD6B88AFFD7B98BFFD7B88BFFD3B283FFBA8F
+                    59FFB2834AFFC8A371FFD4B68EFF976548FF9A6A4C74FFFFFF00B68358FFDFC4
+                    94FFC69A59FFC49A58FFC49A58FFC49A58FFC49A58FFC49B58FFC59959FFC399
+                    55FFC49755FFC49856FFD5B279FFEEDAB2FF9A6B4EFF8F5E439AB68358FFF3E3
+                    B8FFEAD09CFFEAD29BFFEAD29BFFEAD29BFFEAD39CFFEBD29CFFE9CF96FFDEBB
+                    75FFD9B268FFE0C07BFFE6CC99FFAD815DFF946144B2AF855F03B68358FFC790
+                    59FFC68E5AFFC18C57FFBD8756FFBA8455FFB68153FFB27D52FFB37F54FFE3C7
+                    94FFEFD799FFE1C495FFA47450FFA473506CFFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B68358FFD3B3
+                    8CFFCFAB82FFA36E48EAB2855A2AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B68358FFB481
+                    57FFAB764DB5C0966802FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B68358FFB988
+                    5B74FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                    FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+                  }
+                  OnClick = btnRemoverPermissaoClick
+                  ParentFont = False
+                end
+                object dbgPermissoesDisponiveis: TDBGrid
+                  Left = 610
+                  Height = 436
+                  Top = 40
+                  Width = 490
+                  AlternateColor = clGradientInactiveCaption
+                  AutoEdit = False
+                  AutoFillColumns = True
+                  Color = clWindow
+                  Columns = <                  
+                    item
+                      Title.Caption = 'programaID'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'programaID'
+                    end                  
+                    item
+                      Title.Caption = 'programa'
+                      Width = 465
+                      FieldName = 'programa'
+                    end                  
+                    item
+                      Title.Caption = 'hint'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'hint'
+                    end                  
+                    item
+                      Title.Caption = 'formulario'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'formulario'
+                    end                  
+                    item
+                      Title.Caption = 'icone'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'icone'
+                    end                  
+                    item
+                      Title.Caption = 'sistema'
+                      Width = 0
+                      Visible = False
+                      FieldName = 'sistema'
+                    end>
+                  DataSource = dtsProgsDisp
+                  FixedCols = 0
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  Options = [dgColumnResize, dgColumnMove, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisableDelete, dgDisableInsert]
+                  ParentFont = False
+                  ReadOnly = True
+                  Scrollbars = ssVertical
+                  TabOrder = 1
+                  TitleFont.CharSet = ANSI_CHARSET
+                  TitleFont.Color = clBlack
+                  TitleFont.Height = -15
+                  TitleFont.Name = 'Segoe UI'
+                  TitleFont.Pitch = fpVariable
+                  TitleFont.Quality = fqDraft
+                  TitleStyle = tsNative
+                end
+                object Label4: TLabel
+                  Left = 35
+                  Height = 20
+                  Top = 18
+                  Width = 211
+                  Caption = 'Programas atribídos ao usuário '
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  ParentColor = False
+                  ParentFont = False
+                end
+                object Label7: TLabel
+                  Left = 610
+                  Height = 20
+                  Top = 18
+                  Width = 153
+                  Caption = 'Programas disponíveis '
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -15
+                  Font.Name = 'Segoe UI'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  ParentColor = False
+                  ParentFont = False
+                end
+              end
+            end
+          end
+          object Panel9: TPanel
+            Left = 3
+            Height = 4
+            Top = 3
+            Width = 844
+            Align = alTop
+            BevelOuter = bvNone
+            Font.CharSet = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Height = -15
+            Font.Name = 'Segoe UI'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentFont = False
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object Panel3: TPanel
+      Left = 5
+      Height = 38
+      Top = 5
+      Width = 870
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 38
+      ClientWidth = 870
+      Color = 16314343
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Century Gothic'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 11
+        Height = 21
+        Top = 4
+        Width = 176
+        Caption = ' Manutenção de Usuários'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 5195575
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape1: TShape
+        Left = 0
+        Height = 2
+        Top = 36
+        Width = 870
+        Align = alBottom
+        Pen.Color = 9330468
+      end
+      object Panel11: TPanel
+        Left = 809
+        Height = 36
+        Top = 0
+        Width = 0
+        Align = alRight
+        AutoSize = True
+        BevelOuter = bvNone
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Century Gothic'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 0
+      end
+      object DBText1: TDBText
+        Left = 809
+        Height = 36
+        Top = 0
+        Width = 61
+        Align = alRight
+        DataField = 'nome'
+        DataSource = dtsUsuarios
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -19
+        Font.Name = 'Segoe UI Light'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+  object dtsUsuarios: TDataSource
+    DataSet = dm_painel_de_controle.sqlUsuarios
+    OnStateChange = dtsUsuariosStateChange
+    OnDataChange = dtsUsuariosDataChange
+    left = 770
+    top = 160
+  end
+  object dtsProgsUsuario: TDataSource
+    DataSet = dm_painel_de_controle.sqlProgsUsuario
+    OnDataChange = dtsProgsUsuarioDataChange
+    left = 770
+    top = 240
+  end
+  object dtsProgsDisp: TDataSource
+    DataSet = dm_painel_de_controle.sqlProgrsDisponiveis
+    OnDataChange = dtsProgsDispDataChange
+    left = 770
+    top = 320
+  end
+end
