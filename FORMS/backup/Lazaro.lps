@@ -138,8 +138,8 @@
         <UnitName Value="uFrameLogin"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="129"/>
-        <CursorPos X="3" Y="132"/>
+        <TopLine Value="4"/>
+        <CursorPos X="8" Y="24"/>
         <UsageCount Value="179"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -477,124 +477,124 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="114" TopLine="90"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="113" Column="11" TopLine="97"/>
       </Position1>
       <Position2>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="115" TopLine="90"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="167" Column="27" TopLine="148"/>
       </Position2>
       <Position3>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="116" TopLine="90"/>
+        <Caret Line="112" TopLine="92"/>
       </Position3>
       <Position4>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="117" TopLine="91"/>
+        <Caret Line="113" TopLine="92"/>
       </Position4>
       <Position5>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="118" TopLine="92"/>
+        <Caret Line="114" TopLine="92"/>
       </Position5>
       <Position6>
-        <Filename Value="udf.pas"/>
-        <Caret Line="113" Column="11" TopLine="97"/>
+        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
+        <Caret Line="115" TopLine="92"/>
       </Position6>
       <Position7>
-        <Filename Value="udf.pas"/>
-        <Caret Line="167" Column="27" TopLine="148"/>
+        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
+        <Caret Line="116" TopLine="92"/>
       </Position7>
       <Position8>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="112" TopLine="92"/>
+        <Caret Line="117" TopLine="92"/>
       </Position8>
       <Position9>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="113" TopLine="92"/>
+        <Caret Line="118" TopLine="92"/>
       </Position9>
       <Position10>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="114" TopLine="92"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="167" Column="34" TopLine="145"/>
       </Position10>
       <Position11>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="115" TopLine="92"/>
+        <Caret Line="112" TopLine="92"/>
       </Position11>
       <Position12>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="116" TopLine="92"/>
+        <Caret Line="113" TopLine="92"/>
       </Position12>
       <Position13>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="117" TopLine="92"/>
+        <Caret Line="114" TopLine="92"/>
       </Position13>
       <Position14>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="118" TopLine="92"/>
+        <Caret Line="115" TopLine="92"/>
       </Position14>
       <Position15>
-        <Filename Value="udf.pas"/>
-        <Caret Line="167" Column="34" TopLine="145"/>
+        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
+        <Caret Line="116" TopLine="92"/>
       </Position15>
       <Position16>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="112" TopLine="92"/>
+        <Caret Line="117" TopLine="92"/>
       </Position16>
       <Position17>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="113" TopLine="92"/>
+        <Caret Line="118" TopLine="92"/>
       </Position17>
       <Position18>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="114" TopLine="92"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="166" TopLine="145"/>
       </Position18>
       <Position19>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="115" TopLine="92"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="167" TopLine="145"/>
       </Position19>
       <Position20>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="116" TopLine="92"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="168" TopLine="145"/>
       </Position20>
       <Position21>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="117" TopLine="92"/>
+        <Filename Value="udf.pas"/>
+        <Caret Line="169" TopLine="145"/>
       </Position21>
       <Position22>
         <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="118" TopLine="92"/>
+        <Caret Line="125" Column="106" TopLine="125"/>
       </Position22>
       <Position23>
-        <Filename Value="udf.pas"/>
-        <Caret Line="166" TopLine="145"/>
-      </Position23>
-      <Position24>
-        <Filename Value="udf.pas"/>
-        <Caret Line="167" TopLine="145"/>
-      </Position24>
-      <Position25>
-        <Filename Value="udf.pas"/>
-        <Caret Line="168" TopLine="145"/>
-      </Position25>
-      <Position26>
-        <Filename Value="udf.pas"/>
-        <Caret Line="169" TopLine="145"/>
-      </Position26>
-      <Position27>
-        <Filename Value="paineldecontrole\uframepaineldecontroleprogramas.pas"/>
-        <Caret Line="125" Column="106" TopLine="125"/>
-      </Position27>
-      <Position28>
         <Filename Value="datamodules\u_dm_principal.pas"/>
         <Caret Line="10" Column="112" TopLine="17"/>
-      </Position28>
-      <Position29>
+      </Position23>
+      <Position24>
         <Filename Value="uprincipal.pas"/>
         <Caret Line="52" Column="76" TopLine="19"/>
+      </Position24>
+      <Position25>
+        <Filename Value="frames\uframelogin.pas"/>
+        <Caret Line="43" Column="49" TopLine="24"/>
+      </Position25>
+      <Position26>
+        <Filename Value="frames\uframelogin.pas"/>
+        <Caret Line="134" Column="3" TopLine="131"/>
+      </Position26>
+      <Position27>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="52" Column="51" TopLine="32"/>
+      </Position27>
+      <Position28>
+        <Filename Value="frames\uframelogin.pas"/>
+        <Caret Line="47" Column="7" TopLine="27"/>
+      </Position28>
+      <Position29>
+        <Filename Value="frames\uframelogin.pas"/>
+        <Caret Line="42" Column="63" TopLine="22"/>
       </Position29>
       <Position30>
         <Filename Value="frames\uframelogin.pas"/>
-        <Caret Line="43" Column="49" TopLine="24"/>
+        <Caret Line="24" Column="3" TopLine="4"/>
       </Position30>
     </JumpHistory>
     <RunParams>

@@ -110,6 +110,7 @@ type
     sqlAcessos: TZQuery;
     sqlIcones: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
   private
 
   public
@@ -150,6 +151,11 @@ begin
   PERMISSOES_DE_USUARIO   :=sqlProgsUsuario;
   PERMISSOES_DISPONIVEIS  :=sqlProgrsDisponiveis;
   LOGIN                   :=sqlLogin;
+end;
+
+procedure Tdm_painel_de_controle.DataModuleDestroy(Sender: TObject);
+begin
+
 end;
 
 end.

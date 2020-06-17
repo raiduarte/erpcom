@@ -143,13 +143,13 @@ var
 procedure Tdm_painel_de_controle.DataModuleCreate(Sender: TObject);
 begin
   // atriibui os conecotres as variáveis
-  USUARIOS              :=sqlUsuarios;
-  PROGRAMAS             :=sqlProgramas;
-  ICONES                :=sqlIcones;
-  ACESSOS               :=sqlAcessos;
-  PERMISSOES_DE_USUARIO  :=sqlProgsUsuario;
-  PERMISSOES_DISPONIVEIS :=sqlProgrsDisponiveis;
-  LOGIN                 :=sqlLogin;
+  USUARIOS                :=sqlUsuarios;
+  PROGRAMAS               :=sqlProgramas;
+  ICONES                  :=sqlIcones;
+  ACESSOS                 :=sqlAcessos;
+  PERMISSOES_DE_USUARIO   :=sqlProgsUsuario;
+  PERMISSOES_DISPONIVEIS  :=sqlProgrsDisponiveis;
+  LOGIN                   :=sqlLogin;
 end;
 
 end.

@@ -1,11 +1,12 @@
 object dm_painel_de_controle: Tdm_painel_de_controle
   OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
   OldCreateOrder = False
-  Height = 1030
+  Height = 824
   HorizontalOffset = 0
   VerticalOffset = 0
-  Width = 1822
-  PPI = 120
+  Width = 1458
+  PPI = 96
   object sqlUsuarios: TZQuery
     Connection = dm_principal.ZConnection1
     SortedFields = 'nome'
@@ -17,8 +18,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
     )
     Params = <>
     IndexFieldNames = 'nome Asc'
-    left = 204
-    top = 48
+    left = 163
+    top = 38
     object sqlUsuariosusuarioID: TLongintField
       FieldKind = fkData
       FieldName = 'usuarioID'
@@ -90,8 +91,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
     )
     Params = <>
     IndexFieldNames = 'programa Asc'
-    left = 312
-    top = 48
+    left = 250
+    top = 38
     object sqlProgramasprogramaID: TLongintField
       FieldKind = fkData
       FieldName = 'programaID'
@@ -167,8 +168,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
         Name = 'usuarioID'
         ParamType = ptUnknown
       end>
-    left = 424
-    top = 48
+    left = 339
+    top = 38
     ParamData = <    
       item
         DataType = ftUnknown
@@ -310,8 +311,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
         Name = 'senha'
         ParamType = ptInput
       end>
-    left = 96
-    top = 48
+    left = 77
+    top = 38
     ParamData = <    
       item
         DataType = ftString
@@ -398,8 +399,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
       ')'
     )
     UseSequenceFieldForRefreshSQL = False
-    left = 832
-    top = 56
+    left = 666
+    top = 45
     ParamData = <    
       item
         DataType = ftUnknown
@@ -443,8 +444,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
         ParamType = ptInput
       end>
     DataSource = dtsLogin
-    left = 536
-    top = 48
+    left = 429
+    top = 38
     ParamData = <    
       item
         DataType = ftInteger
@@ -573,8 +574,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
   end
   object dtsLogin: TDataSource
     DataSet = sqlLogin
-    left = 96
-    top = 112
+    left = 77
+    top = 90
   end
   object sqlIcones: TZQuery
     Connection = dm_principal.ZConnection1
@@ -582,8 +583,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
       'SELECT * FROM sis_icones'
     )
     Params = <>
-    left = 648
-    top = 48
+    left = 518
+    top = 38
     object sqlIconesiconeID: TLongintField
       FieldKind = fkData
       FieldName = 'iconeID'
@@ -614,8 +615,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
   end
   object dtsUsuarios: TDataSource
     DataSet = sqlUsuarios
-    left = 204
-    top = 112
+    left = 163
+    top = 90
   end
   object sqlProgsUsuario: TZQuery
     Connection = dm_principal.ZConnection1
@@ -633,8 +634,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
         ParamType = ptUnknown
       end>
     DataSource = dtsUsuarios
-    left = 208
-    top = 224
+    left = 166
+    top = 179
     ParamData = <    
       item
         DataType = ftUnknown
@@ -763,8 +764,8 @@ object dm_painel_de_controle: Tdm_painel_de_controle
         ParamType = ptInput
       end>
     IndexFieldNames = 'programa Asc'
-    left = 204
-    top = 392
+    left = 163
+    top = 314
     ParamData = <    
       item
         DataType = ftInteger
@@ -831,30 +832,30 @@ object dm_painel_de_controle: Tdm_painel_de_controle
   end
   object dtsPermissoes: TDataSource
     DataSet = sqlPermissoes
-    left = 424
-    top = 112
+    left = 339
+    top = 90
   end
   object dtsAcessos: TDataSource
-    left = 536
-    top = 112
+    left = 429
+    top = 90
   end
   object dtsProgramas: TDataSource
     DataSet = sqlProgramas
-    left = 312
-    top = 112
+    left = 250
+    top = 90
   end
   object dtsIcones: TDataSource
     DataSet = sqlIcones
-    left = 648
-    top = 112
+    left = 518
+    top = 90
   end
   object dtsProgsUsuario: TDataSource
-    left = 208
-    top = 288
+    left = 166
+    top = 230
   end
   object dtsProgrsDisponiveis: TDataSource
     DataSet = sqlProgrsDisponiveis
-    left = 204
-    top = 456
+    left = 163
+    top = 365
   end
 end
