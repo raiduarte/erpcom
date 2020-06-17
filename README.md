@@ -29,3 +29,5 @@ Ser um erp completo que atenda todas as necessidades dos setores de uma empresa,
 13-Controle de Compras
 14-Controle de RH
 15-Integração com Woocomerce
+16-Integração Contábil
+17-Controle de Produção
